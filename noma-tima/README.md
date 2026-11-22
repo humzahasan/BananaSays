@@ -1,15 +1,20 @@
-# NOMA TIMA — Global Dessert Bar & Bistro
+# NOMA TIMA website
 
-Static website for NOMA TIMA, a dessert bar, bistro and home bakery on Beacon Street, Aliganj, Lucknow.
+Static site for NOMA TIMA, a global dessert bar, bistro and home bakery on Beacon Street, Aliganj, Lucknow.
 
-- `index.html` — single-page site (hero, menu, hampers, bakery, chef, reviews, order links, map)
-- `styles.css` — styling (dark theme with the brand red)
-- `app.js` — mobile nav and scroll animations
-- `assets/` — images
+The opening section is an interactive 3D crème brûlée (Three.js): drag across the custard to torch the sugar, then tap the golden crust to crack it. If WebGL isn't available, a photo shows instead.
 
-No build step. Open `index.html` in a browser, or host the folder on GitHub Pages / Netlify / Vercel.
+- `index.html`: the page
+- `styles.css`: styles
+- `brulee.js`: the 3D brûlée scene (Three.js 0.160 from jsDelivr, no build step)
+- `assets/`: photos
 
-## To check before going live
-- Phone / WhatsApp number (`9811792837`) was read from a small poster — confirm it.
-- The quotes in "Happy customers" are placeholders — swap in real reviews.
-- Add more dish photos and prices to the menu cards.
+Run locally with any static server, e.g. `python3 -m http.server` in this folder. ES modules don't load over `file://`.
+
+The design follows the `frontend-design` skill from https://github.com/anthropics/skills.
+
+## Before launch
+- Confirm the phone/WhatsApp number (9811792837). It was read from a poster.
+- Add opening hours once known.
+- Menu prices were taken from the printed menu PDF (Google Drive), where the ₹ symbol was misread in places (e.g. "2839" → ₹839). Check them against the current Swiggy/Zomato listing.
+- Crème brûlée is on Instagram but not in the PDF menu, so it's shown as a signature without a price.
