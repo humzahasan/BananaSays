@@ -44,13 +44,11 @@ renderer.domElement.addEventListener("webglcontextlost", (e) => {
   statusEl.textContent = TEXT.fail;
 });
 
-console.log('T',performance.now()|0,'const rand = rng(');
 const rand = rng(20251122);
 const noise = makeNoise(rand);
 const scene = new THREE.Scene();
 scene.environment = studioEnvironment(renderer);
 
-console.log('T',performance.now()|0,'const camera =');
 const camera = new THREE.PerspectiveCamera(32, 1, 0.1, 50);
 const REST_POS = new THREE.Vector3(0, 5.4, 4.6), REST_AIM = new THREE.Vector3(0, 0.1, 0);
 const INTRO_POS = new THREE.Vector3(1.7, 0.95, 2.6), INTRO_AIM = new THREE.Vector3(0.15, 0.3, 0);
@@ -71,7 +69,6 @@ scene.add(glint);
 const torchLight = new THREE.PointLight(0xff8a2a, 0, 2.2, 2);
 scene.add(torchLight);
 
-console.log('T',performance.now()|0,'// ---------- Foil t');
 // ---------- Foil tray ----------
 const TRAY_W = 3.1, TRAY_H = 1.2, WALL = 0.42;
 const TS = TRAY_W / 2 - TRAY_H / 2, TR = TRAY_H / 2; // stadium straight half-length and end radius
@@ -106,7 +103,6 @@ base.rotation.x = -Math.PI / 2;
 base.position.y = 0.004;
 tray.add(base);
 
-console.log('T',performance.now()|0,'// ---------- The su');
 // ---------- The sugar top ----------
 const TOP_W = TRAY_W - 0.03, TOP_H = TRAY_H - 0.03, TOP_Y = WALL - 0.05;
 const SS = TOP_W / 2 - TOP_H / 2, SR = TOP_H / 2;
@@ -156,7 +152,6 @@ for (let y = 0; y < GH; y++)
     if (stadiumSD(px, pz, SS, SR) < -0.03) { inside[y * GW + x] = 1; insideCount++; }
   }
 
-console.log('T',performance.now()|0,'const TEX_W =');
 const TEX_W = small ? 768 : 1024, TEX_H = Math.round((TEX_W * TOP_H) / TOP_W);
 const PX = TEX_W / TOP_W; // texture pixels per world unit
 const gridCanvas = canvas(GW, GH), gctx = gridCanvas.getContext("2d");
@@ -200,7 +195,6 @@ const caramelBump = canvas(TEX_W, TEX_H);
   }
 }
 
-console.log('T',performance.now()|0,'const colorTex');
 const colorTex = new THREE.CanvasTexture(texCanvas);
 colorTex.colorSpace = THREE.SRGBColorSpace;
 colorTex.flipY = false;
@@ -321,7 +315,6 @@ const sugar = new THREE.Mesh(topGeo, sugarMat);
 sugar.receiveShadow = true;
 tray.add(sugar);
 
-console.log('T',performance.now()|0,'// ---------- Stone ');
 // ---------- Stone board, contact shadows, props ----------
 const BOARD_R = 2.0, BOARD_Z = -0.25;
 const stone = stoneTextures(rand, small ? 512 : 1024);
@@ -362,7 +355,6 @@ ground.position.y = -0.16;
 ground.receiveShadow = true;
 scene.add(ground);
 
-console.log('T',performance.now()|0,'// Vanilla pods');
 // Vanilla pods, as in every photo of the real thing.
 const podMat = new THREE.MeshPhysicalMaterial({
   vertexColors: true, roughness: 0.42, clearcoat: 0.35, clearcoatRoughness: 0.35,
@@ -381,7 +373,6 @@ bloom.rotation.y = 0.5;
 bloom.scale.setScalar(1.1);
 scene.add(bloom);
 
-console.log('T',performance.now()|0,'// ---------- Sugar ');
 // ---------- Sugar crystal shower ----------
 const NCRYST = small ? 320 : 850;
 const crystalMat = new THREE.MeshStandardMaterial({ color: 0xfffbf2, roughness: 0.12, metalness: 0, envMapIntensity: 1.6 });
@@ -419,7 +410,11 @@ function updateCrystals(dt, force) {
     const c = cr[i];
     let changed = force;
     if (!c.landed) {
-      if (c.delay > 0) { c.delay -= dt; moving = true; continue; }
+      if (c.delay > 0) {
+        c.delay -= dt; moving = true;
+        if (force) { dummy.scale.setScalar(0); dummy.updateMatrix(); crystals.setMatrixAt(i, dummy.matrix); }
+        continue;
+      }
       c.vy -= 9 * dt;
       c.y += c.vy * dt; c.x += c.vx * dt; c.z += c.vz * dt;
       c.rx += c.spin * dt; c.ry += c.spin * 0.7 * dt;
@@ -440,7 +435,7 @@ function updateCrystals(dt, force) {
       if (Math.abs(m - c.melt) > 0.03 || (m === 0 && c.melt !== 0)) { c.melt = m; changed = true; }
     }
     if (changed) {
-      const s = c.size * (c.landed || c.delay <= 0 ? 1 : 0) * c.melt;
+      const s = c.size * c.melt;
       dummy.position.set(c.x, c.y - (1 - c.melt) * c.size * 0.4, c.z);
       dummy.rotation.set(c.rx, c.ry, c.rz);
       dummy.scale.set(s, s * 0.85, s);
@@ -452,7 +447,6 @@ function updateCrystals(dt, force) {
   crystalsActive = moving;
 }
 
-console.log('T',performance.now()|0,'// ---------- Torch:');
 // ---------- Torch: nozzle, flame, glow, embers, smoke ----------
 const TORCH_DIR = new THREE.Vector3(0.62, 1, 0.08).normalize(); // from the sugar back up to the nozzle
 const FLAME_LEN = 0.4;
@@ -530,7 +524,6 @@ crumbs.visible = false;
 tray.add(crumbs);
 const crumbState = Array.from({ length: crumbN }, () => ({}));
 
-console.log('T',performance.now()|0,'// ---------- Sizing');
 // ---------- Sizing ----------
 function resize() {
   const { clientWidth: w, clientHeight: h } = stage;
@@ -794,7 +787,6 @@ function frame(now) {
   if (!visible) return;
   t += dt;
 
-  if (t < 0.3) console.log('F start', performance.now()|0);
   // Drop resolution a notch if a slow device can't hold the frame rate.
   frameAvg += (dt - frameAvg) * 0.05;
   adaptTimer += dt;
@@ -978,15 +970,10 @@ function frame(now) {
   camera.lookAt(camAim);
   tray.rotation.y += ((reduceMotion ? 0 : Math.sin(t * 0.25) * 0.06) - tray.rotation.y) * 0.05;
 
-  if (t < 3) console.log('F pre', performance.now()|0);
   renderer.render(scene, camera);
-  if (t < 3) console.log('F post', performance.now()|0);
   if (!stage.classList.contains("ready")) stage.classList.add("ready");
 }
 
-console.log('T',performance.now()|0,'showerCrystals(reduc');
 showerCrystals(reduceMotion);
-console.log('T after shower');
 paintTexture();
-console.log('T after paint');
 requestAnimationFrame(frame);
