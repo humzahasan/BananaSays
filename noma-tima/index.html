@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>NOMA TIMA, Lucknow</title>
-  <meta name="description" content="Global dessert bar and bistro in Aliganj, Lucknow. Crème brûlée torched to order, malai toast, frozen desserts, hampers and home bakery. Order on Swiggy and Zomato." />
-  <meta property="og:title" content="NOMA TIMA, Lucknow" />
-  <meta property="og:description" content="Crème brûlée torched to order, malai toast, frozen desserts and hampers in Aliganj, Lucknow." />
+  <title>NOMA TIMA, global dessert kitchen in Lucknow</title>
+  <meta name="description" content="Chef Nesar Ahmad Noorullah’s global dessert kitchen in Lucknow. Crème brûlée torched to order, molten cheesecakes, tres leches, celebration cakes, a home bakery and hampers. Order on Swiggy or Zomato." />
+  <meta property="og:title" content="NOMA TIMA: crack the top" />
+  <meta property="og:description" content="Twenty-two years of dessert craft from Chef Nesar Ahmad Noorullah. Tres leches, kunafa, molten cheesecakes and a brûlée torched to order, in Lucknow." />
   <meta property="og:image" content="assets/creme-brulee.jpg" />
   <meta name="theme-color" content="#D3262A" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -23,7 +23,7 @@
   </script>
 </head>
 <body>
-  <a class="skip" href="#menu">Skip to the menu</a>
+  <a class="skip" href="#signatures">Skip to the desserts</a>
 
   <header class="hero" id="top">
     <nav class="nav" aria-label="Main">
@@ -31,15 +31,17 @@
         <span>NOMA</span><span>TIMA</span>
       </a>
       <ul>
-        <li><a href="#full-menu">Menu</a></li>
-        <li><a href="#visit">Visit</a></li>
+        <li><a href="#maestro">The chef</a></li>
+        <li><a href="#signatures">Signatures</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#hampers">Hampers</a></li>
         <li><a href="#order" class="nav-order">Order</a></li>
       </ul>
     </nav>
 
     <div class="hero-copy">
-      <h1>Wait and watch us torch the brûlée.</h1>
-      <p>Or do it yourself. Drag across the custard, then tap the crust when it’s golden.</p>
+      <h1 id="hero-title">Crack the top.</h1>
+      <p id="hero-sub">Crème brûlée torched to order, and desserts from around the world, from Chef Nesar’s kitchen in Lucknow. Drag across the custard to try the torch.</p>
     </div>
 
     <div class="stage" id="stage">
@@ -54,201 +56,157 @@
   </header>
 
   <main>
+    <!-- ===== The Maestro ===== -->
+    <section class="maestro" id="maestro" aria-labelledby="maestro-title">
+      <p class="years" aria-hidden="true">22</p>
+      <div class="maestro-copy">
+        <h2 id="maestro-title">Twenty-two years on desserts</h2>
+        <div class="maestro-story" id="maestro-story">
+          <p>Twenty-two years is a lot of custard. Long enough to know when caramel has gone one shade too far, how long a sponge should sit in three milks, and why a celebration cake tastes better layered the day you order it. Chef Nesar Ahmad Noorullah spent those years in five-star hotel kitchens, luxury bakeries and premium online bakeries. NOMA TIMA is his own kitchen: tres leches and Matilda pies, molten cheesecakes, kunafa under dark chocolate, and a tiramisu called TimaMisu.</p>
+          <p>The details are specific. Strawberry compote from Mahabaleshwar strawberries. Coorg coffee in the cup. RO water in the bread dough, and homemade buns with no chemicals. Many of the desserts are eggless. The brûlée gets its sugar crust under the torch, to order, so the shell is still crackling when your spoon reaches it.</p>
+          <p>He also runs TBC, The Bakery Consultant, setting up kitchens for other bakeries. His Instagram bio lists his current obsession as the perfect dessert. This menu is where he works on it.</p>
+        </div>
+        <p class="maestro-ig"><a href="https://www.instagram.com/nesarnoorullah/" target="_blank" rel="noopener">Follow Chef Nesar on Instagram</a></p>
+      </div>
+      <blockquote class="maestro-quote" id="maestro-quote">Layered the day you order it. Torched the minute it leaves.</blockquote>
+      <ul class="craft" id="craft">
+        <li><strong>22 years</strong><span>In five-star hotels, luxury bakeries and premium online bakeries.</span></li>
+        <li><strong>Layered fresh to order</strong><span>Celebration cakes are built after you order, not before.</span></li>
+        <li><strong>Sourced by name</strong><span>Mahabaleshwar strawberries, Coorg coffee, RO water in the bread.</span></li>
+        <li><strong>Many eggless</strong><span>Much of the dessert menu is eggless, and the hampers say so.</span></li>
+      </ul>
+    </section>
+
+    <!-- ===== Signatures ===== -->
+    <section class="signatures" id="signatures" aria-labelledby="sig-title">
+      <div class="sig-head">
+        <h2 id="sig-title">Start with these</h2>
+        <p id="sig-intro">Ten things we’d put in front of you first. Swipe or drag through them.</p>
+        <div class="sig-nav">
+          <button class="sig-btn" data-dir="-1" aria-label="Previous dessert" aria-controls="sig-track">‹</button>
+          <button class="sig-btn" data-dir="1" aria-label="Next dessert" aria-controls="sig-track">›</button>
+        </div>
+      </div>
+      <!-- SIGNATURES -->
+<ol class="sig-track" id="sig-track">
+<li class="sig"><figure class="plate"><img class="sig-img" src="assets/creme-brulee.jpg" alt="Crème brûlée with a torched sugar crust in an oval tray" width="352" height="279" loading="lazy" decoding="async" /></figure><h3>Crème brûlée</h3><p>Cold, set custard under a sugar shell torched to order. Tap it and listen.</p></li>
+<li class="sig"><figure class="plate"><span class="sig-img sig-img--empty"></span></figure><h3>Chocolate Strawberry Cake</h3><p>Chef Nesar’s signature. Chocolate and strawberry, layered fresh the day you order.</p><span class="sig-price">₹839</span></li>
+<li class="sig"><figure class="plate"><span class="sig-img sig-img--empty"></span></figure><h3>Chocolate Kunafa</h3><p>Ghee-roasted kunafa crunch, pistachio mousseline, and a thick layer of dark chocolate ganache.</p><span class="sig-price">₹282</span></li>
+<li class="sig"><figure class="plate"><span class="sig-img sig-img--empty"></span></figure><h3>Molten Biscoff Cheesecake</h3><p>Chilled cheesecake that runs when you cut it, Belgian speculoos on a sablé crust.</p><span class="sig-price">₹314</span></li>
+<li class="sig"><figure class="plate"><span class="sig-img sig-img--empty"></span></figure><h3>Strawberry Tres Leches</h3><p>Sponge soaked through with three milks, layered with strawberry compote and diplomat cream.</p><span class="sig-price">₹261</span></li>
+<li class="sig"><figure class="plate"><span class="sig-img sig-img--empty"></span></figure><h3>TimaMisu</h3><p>Our tiramisu. Espresso-soaked sponge, mascarpone, a hint of caramel, a dusting of cocoa.</p><span class="sig-price">₹261</span></li>
+<li class="sig"><figure class="plate"><span class="sig-img sig-img--empty"></span></figure><h3>Summer Mango Gateaux</h3><p>Mango as a 500 g celebration cake. Made after you order, so allow 45 minutes.</p><span class="sig-price">₹839</span></li>
+<li class="sig"><figure class="plate"><span class="sig-img sig-img--empty"></span></figure><h3>Blueberry Molten Cheesecake</h3><p>Sablé cookie crust, soft chilled cheesecake, and blueberry compote that breaks through.</p><span class="sig-price">₹282</span></li>
+<li class="sig"><figure class="plate"><span class="sig-img sig-img--empty"></span></figure><h3>Malai bread</h3><p>Thick bread under fresh malai with grain sugar or crushed nuts. Soft, or caramelised.</p><span class="sig-price">₹116</span></li>
+<li class="sig"><figure class="plate"><span class="sig-img sig-img--empty"></span></figure><h3>Ultra Lux Dessert Hamper</h3><p>Four desserts, a box of cookies and chocolates, packed to give.</p><span class="sig-price">₹1,889</span></li>
+</ol>
+<!-- /SIGNATURES -->
+    </section>
+
+
+    <!-- ===== Real photos from the kitchen ===== -->
+    <section class="kitchen" id="kitchen" aria-labelledby="kitchen-title">
+      <div class="kitchen-head">
+        <h2 id="kitchen-title">Straight from the kitchen</h2>
+        <p>Real photos of real tubs, from our WhatsApp catalogue. Ask us what came out of the kitchen today.</p>
+        <a class="btn" href="https://wa.me/c/919811792837" target="_blank" rel="noopener">Browse the WhatsApp catalogue</a>
+      </div>
+      <ul class="kitchen-grid">
+        <li><img src="assets/real/tub-1.jpg" alt="Layered dessert tub topped with pistachio and rose petals" width="291" height="288" loading="lazy" /></li>
+        <li><img src="assets/real/tub-2.jpg" alt="Blueberry cheesecake tub" width="291" height="288" loading="lazy" /></li>
+        <li><img src="assets/real/tub-3.jpg" alt="Cream-topped tub with mango pieces" width="291" height="288" loading="lazy" /></li>
+        <li><img src="assets/real/tub-4.jpg" alt="Chocolate tub with whipped cream and chocolate shavings" width="291" height="291" loading="lazy" /></li>
+        <li><img src="assets/real/tub-5.jpg" alt="Chocolate mousse tub topped with piped meringue kisses" width="291" height="291" loading="lazy" /></li>
+        <li><img src="assets/real/tub-6.jpg" alt="Chocolate truffle tub" width="291" height="291" loading="lazy" /></li>
+      </ul>
+    </section>
+
+    <!-- ===== Menu ===== -->
     <section class="menu" id="menu" aria-labelledby="menu-title">
       <div class="menu-head">
-        <h2 id="menu-title">What we make</h2>
-        <p>Desserts from around the world, made in small batches in Aliganj, plus a bistro menu of burgers, dimsums and breakfast. Start with these, or <a href="#full-menu">see everything</a>.</p>
+        <h2 id="menu-title">The full menu</h2>
+        <p id="menu-intro">Tres leches, cheesecakes, puddings and celebration cakes, plus a bistro side for burgers, dimsums and all-day eggs. Prices are from our printed menu; Swiggy and Zomato show what’s in stock today.</p>
       </div>
-
-      <figure class="menu-photo">
-        <img src="assets/creme-brulee.jpg" alt="Crème brûlée beside vanilla pods and a bowl of brown sugar" loading="lazy" />
-      </figure>
-
-      <dl class="dishes">
-        <div class="dish dish-hero">
-          <dt>Crème brûlée</dt>
-          <dd>Vanilla-bean custard, sugar torched to a crackling shell just before it leaves the kitchen.</dd>
-        </div>
-        <div class="dish">
-          <dt>Chocolate strawberry cake <span class="price">₹839</span></dt>
-          <dd>Chef Nesar’s signature: dark chocolate cake with a layer of strawberry compote, layered fresh to order.</dd>
-          <dd class="dish-photo"><img src="assets/menu/sig-choc-strawberry.jpg" alt="Chocolate strawberry cake topped with strawberries" loading="lazy" /></dd>
-        </div>
-        <div class="dish">
-          <dt>Chocolate kunafa <span class="price">₹282</span></dt>
-          <dd>Ghee-roasted kunafa and pistachio mousseline under dark chocolate ganache.</dd>
-          <dd class="dish-photo"><img src="assets/menu/sig-kunafa.jpg" alt="Chocolate kunafa covered in pistachio" loading="lazy" /></dd>
-        </div>
-        <div class="dish">
-          <dt>Molten Biscoff cheesecake <span class="price">₹314</span></dt>
-          <dd>Chilled and gooey, on a sablé cookie crust, with Belgian speculoos running through it.</dd>
-          <dd class="dish-photo"><img src="assets/menu/sig-biscoff.jpg" alt="Molten Biscoff cheesecake with caramel sauce" loading="lazy" /></dd>
-        </div>
-        <div class="dish">
-          <dt>Malai bread <span class="price">from ₹84</span></dt>
-          <dd>Thick slices of our bread under fresh malai, with grain sugar or crushed nuts. Have it soft or caramelised.</dd>
-          <dd class="dish-photo"><img src="assets/menu/sig-malai.jpg" alt="Malai bread topped with crushed nuts" loading="lazy" /></dd>
-        </div>
-      </dl>
-    </section>
-
-    <section class="fullmenu" id="full-menu" aria-labelledby="full-menu-title">
-      <h2 id="full-menu-title">The full menu</h2>
-      <p class="fullmenu-note">Prices from our printed menu. Swiggy and Zomato show today’s prices and what’s in stock.</p>
-      <!-- FULLMENU -->
-<nav class="menu-cats" aria-label="Menu categories">
-<a href="#m-tres-leches">Tres leches, pies and mousse</a>
-<a href="#m-cheesecakes">Cheesecakes</a>
-<a href="#m-puddings">Baked yoghurt puddings</a>
-<a href="#m-cakes">Cakes and tubs</a>
-<a href="#m-celebration">Celebration cakes, 500 g</a>
-<a href="#m-cookies">Cookies and brownies</a>
-<a href="#m-breads">Breads and malai bread</a>
-<a href="#m-hampers">Gift hampers</a>
-<a href="#m-bistro">Bistro: breakfast and small plates</a>
-<a href="#m-burgers">Burgers, rolls and sandwiches</a>
-<a href="#m-drinks">Drinks and combos</a>
-</nav>
-<div class="menu-groups">
-<section class="mgroup" id="m-tres-leches" aria-labelledby="m-tres-leches-h"><div class="mgroup-head"><h3 id="m-tres-leches-h">Tres leches, pies and mousse</h3><img class="mgroup-photo" src="assets/menu/tres-leches.jpg" alt="Strawberry tres leches slice" loading="lazy" /></div><ul>
-<li><span class="mi-name">Noma Tres Leches</span><span class="mi-price">₹209</span><span class="mi-desc">Ultra-moist vanilla cake soaked in three milks, vanilla diplomat cream, toasted coconut.</span></li>
-<li><span class="mi-name">Strawberry Tres Leches</span><span class="mi-price">₹261</span><span class="mi-desc">Three-milk sponge layered with strawberry compote and diplomat cream.</span></li>
-<li><span class="mi-name">Matcha Berry Tres Leches</span><span class="mi-price">₹251</span><span class="mi-desc">Ceremonial matcha in the milk soak, topped with diplomat cream and fresh strawberries.</span></li>
-<li><span class="mi-name">Mocha Matilda Pie</span><span class="mi-price">₹209</span><span class="mi-desc">Espresso-soaked chocolate sponge and dark chocolate ganache. Good warm or cold.</span></li>
-<li><span class="mi-name">Strawberry Chocolate Matilda Pie</span><span class="mi-price">₹251</span><span class="mi-desc">Coffee-soaked chocolate sponge, dark ganache and strawberry compote.</span></li>
-<li><span class="mi-name">Mango Dream Mousse</span><span class="mi-price">₹146</span><span class="mi-desc">Mango white chocolate mousse over vanilla cake with a mango glaze. Serves one.</span></li>
-</ul></section>
-<section class="mgroup" id="m-cheesecakes" aria-labelledby="m-cheesecakes-h"><div class="mgroup-head"><h3 id="m-cheesecakes-h">Cheesecakes</h3><img class="mgroup-photo" src="assets/menu/cheesecakes.jpg" alt="Blueberry molten cheesecake" loading="lazy" /></div><ul>
-<li><span class="mi-name">Vanilla Baked Yoghurt Cheesecake</span><span class="mi-price">₹209</span><span class="mi-desc">Yoghurt, condensed milk and fresh cream, baked and finished with diplomat cream.</span></li>
-<li><span class="mi-name">Strawberry Baked Yoghurt Cheesecake</span><span class="mi-price">₹251</span><span class="mi-desc">Steam-baked with cream cheese, glazed with strawberry compote.</span></li>
-<li><span class="mi-name">Mango Baked Yoghurt Cheesecake</span><span class="mi-price">₹261</span><span class="mi-desc">Glazed with mango compote. Good for two.</span></li>
-<li><span class="mi-name">Blueberry Baked Yoghurt Cheesecake</span><span class="mi-price">₹272</span><span class="mi-desc">Glazed with blueberry compote.</span></li>
-<li><span class="mi-name">Molten Strawberry Cheesecake</span><span class="mi-price">₹261</span><span class="mi-desc">Chilled molten cheesecake on a digestive crumble with Mahabaleshwar strawberry compote.</span></li>
-<li><span class="mi-name">Molten Sea Salt Caramel Cheesecake</span><span class="mi-price">₹272</span><span class="mi-desc">House sea-salt caramel and roasted peanuts.</span></li>
-<li><span class="mi-name">Blueberry Molten Cheesecake</span><span class="mi-price">₹282</span><span class="mi-desc">On a sablé cookie crust, bursting with blueberry compote.</span></li>
-<li><span class="mi-name">Molten Biscoff Cheesecake</span><span class="mi-price">₹314</span><span class="mi-desc">Belgian speculoos paste on a sablé cookie crust.</span></li>
-</ul></section>
-<section class="mgroup" id="m-puddings" aria-labelledby="m-puddings-h"><div class="mgroup-head"><h3 id="m-puddings-h">Baked yoghurt puddings</h3><img class="mgroup-photo" src="assets/menu/puddings.jpg" alt="Lotus Biscoff baked yoghurt pudding" loading="lazy" /></div><ul>
-<li><span class="mi-name">Vanilla Baked Yoghurt Pudding</span><span class="mi-price">₹158</span><span class="mi-desc">Fresh yoghurt, fresh cream and condensed milk. Like our cheesecake, minus the crust.</span></li>
-<li><span class="mi-name">Blueberry Compote Pudding</span><span class="mi-price">₹168</span></li>
-<li><span class="mi-name">Strawberry Compote Pudding</span><span class="mi-price">₹168</span></li>
-<li><span class="mi-name">Pineapple Compote Pudding</span><span class="mi-price">₹168</span></li>
-<li><span class="mi-name">Mango Baked Yoghurt Pudding</span><span class="mi-price">₹177</span><span class="mi-desc">Topped with fresh-cut mango. Gluten free, serves 1 to 2.</span></li>
-<li><span class="mi-name">Hazelnut Crunch Pudding</span><span class="mi-price">₹179</span></li>
-<li><span class="mi-name">Lotus Biscoff Pudding</span><span class="mi-price">₹179</span><span class="mi-desc">Contains gluten.</span></li>
-<li><span class="mi-name">Fresh Mango Pudding</span><span class="mi-price">₹179</span><span class="mi-desc">With seasonal mango compote.</span></li>
-</ul></section>
-<section class="mgroup" id="m-cakes" aria-labelledby="m-cakes-h"><div class="mgroup-head"><h3 id="m-cakes-h">Cakes and tubs</h3><img class="mgroup-photo" src="assets/menu/cakes.jpg" alt="TimaMisu" loading="lazy" /></div><ul>
-<li><span class="mi-name">Chocolate Kunafa</span><span class="mi-price">₹282</span><span class="mi-desc">Ghee-roasted kunafa, pistachio mousseline, dark chocolate ganache.</span></li>
-<li><span class="mi-name">TimaMisu</span><span class="mi-price">₹261</span><span class="mi-desc">Our tiramisu: espresso-soaked sponge, mascarpone, a hint of caramel, cocoa.</span></li>
-<li><span class="mi-name">Chocolate Marquise</span><span class="mi-price">₹282</span><span class="mi-desc">Chocolate mousse, hazelnut praline crunch, a little orange zest.</span></li>
-<li><span class="mi-name">Milk Forest</span><span class="mi-price">₹230</span><span class="mi-desc">Black forest, reworked: tiramisu-soaked sponge, dark cherries, milk chocolate.</span></li>
-<li><span class="mi-name">Thai Ananas Tub Cake</span><span class="mi-price">₹219</span><span class="mi-desc">Stewed pineapple, coconut diplomat cream, vanilla sponge.</span></li>
-<li><span class="mi-name">Mango Shortcake Tub</span><span class="mi-price">₹251</span><span class="mi-desc">Seasonal.</span></li>
-<li><span class="mi-name">Strawberry Shortcake Tub, 150 g</span><span class="mi-price">₹242</span><span class="mi-desc">Medium tub ₹578.</span></li>
-<li><span class="mi-name">British Chocolate Truffle Tub, 150 g</span><span class="mi-price">₹314</span><span class="mi-desc">Medium 400 g tub ₹734.</span></li>
-<li><span class="mi-name">Chocolate or Strawberry Diplomat Cake, 100 g</span><span class="mi-price">₹158</span></li>
-<li><span class="mi-name">Banana Choco Walnut Cake, 150 g</span><span class="mi-price">₹125</span><span class="mi-desc">Banana tea cake with dark chocolate and cinnamon. 480 g ₹398.</span></li>
-</ul></section>
-<section class="mgroup" id="m-celebration" aria-labelledby="m-celebration-h"><div class="mgroup-head"><h3 id="m-celebration-h">Celebration cakes, 500 g</h3><img class="mgroup-photo" src="assets/menu/celebration.jpg" alt="Summer mango gateaux" loading="lazy" /></div><ul>
-<li><span class="mi-name">Chocolate Strawberry Cake</span><span class="mi-price">₹839</span><span class="mi-desc">Chef Nesar’s signature and one of our best sellers. Layered fresh to order.</span></li>
-<li><span class="mi-name">British Chocolate &amp; Hazelnut Cake</span><span class="mi-price">₹839</span></li>
-<li><span class="mi-name">Summer Mango Gateaux</span><span class="mi-price">₹839</span><span class="mi-desc">Takes 45 minutes or more. Schedule your delivery.</span></li>
-<li><span class="mi-name">British Chocolate Truffle Cake</span><span class="mi-price">₹734</span><span class="mi-desc">Serves 5 to 6.</span></li>
-<li><span class="mi-name">Strawberry Shortcake</span><span class="mi-price">₹734</span></li>
-<li><span class="mi-name">Winter Spiced Plum Cake</span><span class="mi-price">₹683</span><span class="mi-desc">250 g ₹368. Eggless 200 g ₹263.</span></li>
-</ul></section>
-<section class="mgroup" id="m-cookies" aria-labelledby="m-cookies-h"><div class="mgroup-head"><h3 id="m-cookies-h">Cookies and brownies</h3><img class="mgroup-photo" src="assets/menu/cookies.jpg" alt="Dark chocolate and walnut brownie" loading="lazy" /></div><ul>
-<li><span class="mi-name">Giant Chocolate Chunk Cashew Cookie</span><span class="mi-price">₹79</span><span class="mi-desc">One 60 g cookie.</span></li>
-<li><span class="mi-name">Almond Overload Cookies, 110 g</span><span class="mi-price">₹105</span></li>
-<li><span class="mi-name">Sesame Ajwain Cookies, 110 g</span><span class="mi-price">₹105</span><span class="mi-desc">A little sweet, a little salty. Made for chai.</span></li>
-<li><span class="mi-name">Kunafa Cookies, 110 g</span><span class="mi-price">₹126</span></li>
-<li><span class="mi-name">Chocolate Chunk &amp; Cashew Cookies, 110 g</span><span class="mi-price">₹137</span></li>
-<li><span class="mi-name">Dark Chocolate &amp; Walnut Brownie</span><span class="mi-price">₹158</span><span class="mi-desc">Egg or eggless. Warm it for 15 seconds and add ice cream.</span></li>
-<li><span class="mi-name">Date &amp; Nut Chocolate Rocks, 100 g</span><span class="mi-price">₹263</span></li>
-</ul></section>
-<section class="mgroup" id="m-breads" aria-labelledby="m-breads-h"><div class="mgroup-head"><h3 id="m-breads-h">Breads and malai bread</h3><img class="mgroup-photo" src="assets/menu/breads.jpg" alt="Whole wheat sourdough loaf" loading="lazy" /></div><ul>
-<li><span class="mi-name">Rich Malai Bread with nuts</span><span class="mi-price">₹116</span><span class="mi-desc">Fresh malai with cashew, almond, pista and walnut. Caramelised toast ₹131.</span></li>
-<li><span class="mi-name">Malai Bread with grain sugar</span><span class="mi-price">₹84</span><span class="mi-desc">Caramelised toast ₹100.</span></li>
-<li><span class="mi-name">Whole Wheat Sourdough</span><span class="mi-price">₹220</span><span class="mi-desc">Levain country loaf, 450 g.</span></li>
-<li><span class="mi-name">Whole Wheat Brown Bread Loaf</span><span class="mi-price">₹80</span><span class="mi-desc">400 g.</span></li>
-<li><span class="mi-name">NOMA Milk Rusk</span><span class="mi-price">₹400</span><span class="mi-desc">Per kilo, from the home bakery.</span></li>
-</ul></section>
-<section class="mgroup" id="m-hampers" aria-labelledby="m-hampers-h"><div class="mgroup-head"><h3 id="m-hampers-h">Gift hampers</h3><img class="mgroup-photo" src="assets/menu/hampers.jpg" alt="Ultra Lux dessert hamper with six desserts" loading="lazy" /></div><ul>
-<li><span class="mi-name">Darling Cookie Hamper</span><span class="mi-price">₹839</span><span class="mi-desc">Four boxes of assorted cookies.</span></li>
-<li><span class="mi-name">Rakhi 4 Dessert Combo</span><span class="mi-price">₹893</span><span class="mi-desc">Four eggless desserts in a clear carry bag.</span></li>
-<li><span class="mi-name">Love Bird’s Dessert Hamper Lux</span><span class="mi-price">₹1,259</span><span class="mi-desc">Six eggless global desserts.</span></li>
-<li><span class="mi-name">Lux Dessert Hamper</span><span class="mi-price">₹1,332</span><span class="mi-desc">Four tubs: chocolate truffle, kunafa, blueberry cheesecake, tres leches.</span></li>
-<li><span class="mi-name">Ultra Lux Dessert Hamper</span><span class="mi-price">₹1,889</span><span class="mi-desc">Four desserts, a cookie box and chocolates.</span></li>
-</ul></section>
-<section class="mgroup" id="m-bistro" aria-labelledby="m-bistro-h"><div class="mgroup-head"><h3 id="m-bistro-h">Bistro: breakfast and small plates</h3><img class="mgroup-photo" src="assets/menu/bistro.jpg" alt="Paneer and vegetable dimsums in a steamer" loading="lazy" /></div><ul>
-<li><span class="mi-name">Butter Toast, 2 pcs</span><span class="mi-price">₹53</span></li>
-<li><span class="mi-name">Double Egg Omelette, plain / masala</span><span class="mi-price">₹74 / 105</span></li>
-<li><span class="mi-name">Double Egg Fried</span><span class="mi-price">₹84</span><span class="mi-desc">Sunny side up or over easy. Well done ₹89.</span></li>
-<li><span class="mi-name">French Fries, 100 g</span><span class="mi-price">₹72</span><span class="mi-desc">Peri peri ₹83. 200 g from ₹146.</span></li>
-<li><span class="mi-name">Potato Cheese Nuggets, 8 pcs</span><span class="mi-price">₹105</span><span class="mi-desc">With chipotle sauce.</span></li>
-<li><span class="mi-name">Garlic Chilli Potato Nuggets, 8 pcs</span><span class="mi-price">₹125</span></li>
-<li><span class="mi-name">Hash Brown</span><span class="mi-price">₹20</span><span class="mi-desc">Per piece.</span></li>
-<li><span class="mi-name">Exotic Vegetable Dimsums, 5 pcs</span><span class="mi-price">₹110</span></li>
-<li><span class="mi-name">Paneer &amp; Vegetable Dimsums, 5 pcs</span><span class="mi-price">₹135</span></li>
-<li><span class="mi-name">Exotic Chicken Dimsums, 5 pcs</span><span class="mi-price">₹137</span><span class="mi-desc">With schezwan chutney.</span></li>
-<li><span class="mi-name">Corn &amp; Masala Paneer Samosa, 5 pcs</span><span class="mi-price">₹135</span></li>
-<li><span class="mi-name">Chicken &amp; Cheese Samosa, 5 pcs</span><span class="mi-price">₹131</span></li>
-<li><span class="mi-name">Hara Bhara Kebab, 5 pcs</span><span class="mi-price">₹105</span></li>
-<li><span class="mi-name">Chickpea Falafel, 5 pcs</span><span class="mi-price">₹147</span></li>
-</ul></section>
-<section class="mgroup" id="m-burgers" aria-labelledby="m-burgers-h"><div class="mgroup-head"><h3 id="m-burgers-h">Burgers, rolls and sandwiches</h3><img class="mgroup-photo" src="assets/menu/burgers.jpg" alt="Double cheeseburger" loading="lazy" /></div><ul>
-<li><span class="mi-name">Chicken Chapli Smash Burger</span><span class="mi-price">₹221</span><span class="mi-desc">Cumin, chilli and pomegranate seeds in a smashed chicken patty.</span></li>
-<li><span class="mi-name">NOMA Chicken Club Burger</span><span class="mi-price">₹156</span></li>
-<li><span class="mi-name">NOMA Paneer Club Burger</span><span class="mi-price">₹177</span></li>
-<li><span class="mi-name">NOMA Veg Club Burger</span><span class="mi-price">₹135</span></li>
-<li><span class="mi-name">TIMA’s Chicken Burger</span><span class="mi-price">₹93</span></li>
-<li><span class="mi-name">TIMA’s Potato Burger</span><span class="mi-price">₹83</span></li>
-<li><span class="mi-name">Chicken Seekh Kebab Hot Dog</span><span class="mi-price">₹177</span></li>
-<li><span class="mi-name">Chicken or Paneer Malabar Paratha Roll</span><span class="mi-price">₹177</span></li>
-<li><span class="mi-name">Cheese Chilli Melt Sandwich</span><span class="mi-price">₹177</span></li>
-<li><span class="mi-name">Classic Avocado Toast</span><span class="mi-price">₹177</span></li>
-<li><span class="mi-name">Roasted Chicken Cheese Chilli Melt</span><span class="mi-price">₹219</span></li>
-<li><span class="mi-name">Chicken Mayo Sandwich</span><span class="mi-price">₹219</span><span class="mi-desc">Butter pan-toasted ₹240.</span></li>
-<li><span class="mi-name">Lettuce, Tomato &amp; Cheese Sandwich</span><span class="mi-price">₹158</span><span class="mi-desc">Pan grilled ₹179.</span></li>
-</ul></section>
-<section class="mgroup" id="m-drinks" aria-labelledby="m-drinks-h"><div class="mgroup-head"><h3 id="m-drinks-h">Drinks and combos</h3><img class="mgroup-photo" src="assets/menu/drinks.jpg" alt="Classic hot chocolate with whipped cream" loading="lazy" /></div><ul>
-<li><span class="mi-name">Coorg Black Coffee</span><span class="mi-price">₹72</span></li>
-<li><span class="mi-name">Coorg Milk Coffee</span><span class="mi-price">₹105</span></li>
-<li><span class="mi-name">Classic Hot Chocolate</span><span class="mi-price">₹158</span><span class="mi-desc">No added sugar.</span></li>
-<li><span class="mi-name">Shikanji: neembu, jamun or anar masala</span><span class="mi-price">₹84</span><span class="mi-desc">200 ml.</span></li>
-<li><span class="mi-name">Veg Club Burger + Campa</span><span class="mi-price">₹177</span></li>
-<li><span class="mi-name">Chicken Club Burger + Campa</span><span class="mi-price">₹198</span></li>
-<li><span class="mi-name">Cheese Chilli Melt + Campa</span><span class="mi-price">₹209</span></li>
-</ul></section>
+      <!-- MENU -->
+<div class="menu-tabs" role="tablist" aria-label="Menu categories">
+<button role="tab" id="tab-tres-leches" aria-controls="panel-tres-leches" aria-selected="true" tabindex="0">Tres leches, pies and mousse</button>
+<button role="tab" id="tab-cheesecakes" aria-controls="panel-cheesecakes" aria-selected="false" tabindex="-1">Cheesecakes</button>
+<button role="tab" id="tab-puddings" aria-controls="panel-puddings" aria-selected="false" tabindex="-1">Baked yoghurt puddings</button>
+<button role="tab" id="tab-cakes" aria-controls="panel-cakes" aria-selected="false" tabindex="-1">Cakes and tubs</button>
+<button role="tab" id="tab-celebration" aria-controls="panel-celebration" aria-selected="false" tabindex="-1">Celebration cakes, 500 g</button>
+<button role="tab" id="tab-cookies" aria-controls="panel-cookies" aria-selected="false" tabindex="-1">Cookies and brownies</button>
+<button role="tab" id="tab-breads" aria-controls="panel-breads" aria-selected="false" tabindex="-1">Breads and malai bread</button>
+<button role="tab" id="tab-hampers" aria-controls="panel-hampers" aria-selected="false" tabindex="-1">Gift hampers</button>
+<button role="tab" id="tab-bistro" aria-controls="panel-bistro" aria-selected="false" tabindex="-1">Bistro: breakfast and small plates</button>
+<button role="tab" id="tab-burgers" aria-controls="panel-burgers" aria-selected="false" tabindex="-1">Burgers, rolls and sandwiches</button>
+<button role="tab" id="tab-drinks" aria-controls="panel-drinks" aria-selected="false" tabindex="-1">Drinks and combos</button>
 </div>
-<!-- /FULLMENU -->
+<div class="menu-panel" role="tabpanel" id="panel-tres-leches" aria-labelledby="tab-tres-leches"><ul class="dish-grid"><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Noma Tres Leches</h4><span class="dish-price">₹209</span><p class="dish-desc">Ultra-moist vanilla cake soaked in three milks, vanilla diplomat cream, toasted coconut.</p></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Strawberry Tres Leches</h4><span class="dish-price">₹261</span><p class="dish-desc">Three-milk sponge layered with strawberry compote and diplomat cream.</p></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Matcha Berry Tres Leches</h4><span class="dish-price">₹251</span><p class="dish-desc">Ceremonial matcha in the milk soak, topped with diplomat cream and fresh strawberries.</p></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Mocha Matilda Pie</h4><span class="dish-price">₹209</span><p class="dish-desc">Espresso-soaked chocolate sponge and dark chocolate ganache. Good warm or cold.</p></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Strawberry Chocolate Matilda Pie</h4><span class="dish-price">₹251</span><p class="dish-desc">Coffee-soaked chocolate sponge, dark ganache and strawberry compote.</p></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Mango Dream Mousse</h4><span class="dish-price">₹146</span><p class="dish-desc">Mango white chocolate mousse over vanilla cake with a mango glaze. Serves one.</p></div></li></ul></div>
+<div class="menu-panel" role="tabpanel" id="panel-cheesecakes" aria-labelledby="tab-cheesecakes" hidden><ul class="dish-grid"><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Vanilla Baked Yoghurt Cheesecake</h4><span class="dish-price">₹209</span><p class="dish-desc">Yoghurt, condensed milk and fresh cream, baked and finished with diplomat cream.</p></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Strawberry Baked Yoghurt Cheesecake</h4><span class="dish-price">₹251</span><p class="dish-desc">Steam-baked with cream cheese, glazed with strawberry compote.</p></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Mango Baked Yoghurt Cheesecake</h4><span class="dish-price">₹261</span><p class="dish-desc">Glazed with mango compote. Good for two.</p></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Blueberry Baked Yoghurt Cheesecake</h4><span class="dish-price">₹272</span><p class="dish-desc">Glazed with blueberry compote.</p></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Molten Strawberry Cheesecake</h4><span class="dish-price">₹261</span><p class="dish-desc">Chilled molten cheesecake on a digestive crumble with Mahabaleshwar strawberry compote.</p></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Molten Sea Salt Caramel Cheesecake</h4><span class="dish-price">₹272</span><p class="dish-desc">House sea-salt caramel and roasted peanuts.</p></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Blueberry Molten Cheesecake</h4><span class="dish-price">₹282</span><p class="dish-desc">On a sablé cookie crust, bursting with blueberry compote.</p></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Molten Biscoff Cheesecake</h4><span class="dish-price">₹314</span><p class="dish-desc">Belgian speculoos paste on a sablé cookie crust.</p></div></li></ul></div>
+<div class="menu-panel" role="tabpanel" id="panel-puddings" aria-labelledby="tab-puddings" hidden><ul class="dish-grid"><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Vanilla Baked Yoghurt Pudding</h4><span class="dish-price">₹158</span><p class="dish-desc">Fresh yoghurt, fresh cream and condensed milk. Like our cheesecake, minus the crust.</p></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Blueberry Compote Pudding</h4><span class="dish-price">₹168</span></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Strawberry Compote Pudding</h4><span class="dish-price">₹168</span></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Pineapple Compote Pudding</h4><span class="dish-price">₹168</span></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Mango Baked Yoghurt Pudding</h4><span class="dish-price">₹177</span><p class="dish-desc">Topped with fresh-cut mango. Gluten free, serves 1 to 2.</p></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Hazelnut Crunch Pudding</h4><span class="dish-price">₹179</span></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Lotus Biscoff Pudding</h4><span class="dish-price">₹179</span><p class="dish-desc">Contains gluten.</p></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Fresh Mango Pudding</h4><span class="dish-price">₹179</span><p class="dish-desc">With seasonal mango compote.</p></div></li></ul></div>
+<div class="menu-panel" role="tabpanel" id="panel-cakes" aria-labelledby="tab-cakes" hidden><ul class="dish-grid"><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Chocolate Kunafa</h4><span class="dish-price">₹282</span><p class="dish-desc">Ghee-roasted kunafa, pistachio mousseline, dark chocolate ganache.</p></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>TimaMisu</h4><span class="dish-price">₹261</span><p class="dish-desc">Our tiramisu: espresso-soaked sponge, mascarpone, a hint of caramel, cocoa.</p></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Chocolate Marquise</h4><span class="dish-price">₹282</span><p class="dish-desc">Chocolate mousse, hazelnut praline crunch, a little orange zest.</p></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Milk Forest</h4><span class="dish-price">₹230</span><p class="dish-desc">Black forest, reworked: tiramisu-soaked sponge, dark cherries, milk chocolate.</p></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Thai Ananas Tub Cake</h4><span class="dish-price">₹219</span><p class="dish-desc">Stewed pineapple, coconut diplomat cream, vanilla sponge.</p></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Mango Shortcake Tub</h4><span class="dish-price">₹251</span><p class="dish-desc">Seasonal.</p></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Strawberry Shortcake Tub, 150 g</h4><span class="dish-price">₹242</span><p class="dish-desc">Medium tub ₹578.</p></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>British Chocolate Truffle Tub, 150 g</h4><span class="dish-price">₹314</span><p class="dish-desc">Medium 400 g tub ₹734.</p></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Chocolate or Strawberry Diplomat Cake, 100 g</h4><span class="dish-price">₹158</span></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Banana Choco Walnut Cake, 150 g</h4><span class="dish-price">₹125</span><p class="dish-desc">Banana tea cake with dark chocolate and cinnamon. 480 g ₹398.</p></div></li></ul></div>
+<div class="menu-panel" role="tabpanel" id="panel-celebration" aria-labelledby="tab-celebration" hidden><ul class="dish-grid"><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Chocolate Strawberry Cake</h4><span class="dish-price">₹839</span><p class="dish-desc">Chef Nesar’s signature and one of our best sellers. Layered fresh to order.</p></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>British Chocolate &amp; Hazelnut Cake</h4><span class="dish-price">₹839</span></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Summer Mango Gateaux</h4><span class="dish-price">₹839</span><p class="dish-desc">Takes 45 minutes or more. Schedule your delivery.</p></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>British Chocolate Truffle Cake</h4><span class="dish-price">₹734</span><p class="dish-desc">Serves 5 to 6.</p></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Strawberry Shortcake</h4><span class="dish-price">₹734</span></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Winter Spiced Plum Cake</h4><span class="dish-price">₹683</span><p class="dish-desc">250 g ₹368. Eggless 200 g ₹263.</p></div></li></ul></div>
+<div class="menu-panel" role="tabpanel" id="panel-cookies" aria-labelledby="tab-cookies" hidden><ul class="dish-grid"><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Giant Chocolate Chunk Cashew Cookie</h4><span class="dish-price">₹79</span><p class="dish-desc">One 60 g cookie.</p></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Almond Overload Cookies, 110 g</h4><span class="dish-price">₹105</span></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Sesame Ajwain Cookies, 110 g</h4><span class="dish-price">₹105</span><p class="dish-desc">A little sweet, a little salty. Made for chai.</p></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Kunafa Cookies, 110 g</h4><span class="dish-price">₹126</span></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Chocolate Chunk &amp; Cashew Cookies, 110 g</h4><span class="dish-price">₹137</span></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Dark Chocolate &amp; Walnut Brownie</h4><span class="dish-price">₹158</span><p class="dish-desc">Egg or eggless. Warm it for 15 seconds and add ice cream.</p></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Date &amp; Nut Chocolate Rocks, 100 g</h4><span class="dish-price">₹263</span></div></li></ul></div>
+<div class="menu-panel" role="tabpanel" id="panel-breads" aria-labelledby="tab-breads" hidden><ul class="dish-grid"><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Rich Malai Bread with nuts</h4><span class="dish-price">₹116</span><p class="dish-desc">Fresh malai with cashew, almond, pista and walnut. Caramelised toast ₹131.</p></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Malai Bread with grain sugar</h4><span class="dish-price">₹84</span><p class="dish-desc">Caramelised toast ₹100.</p></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Whole Wheat Sourdough</h4><span class="dish-price">₹220</span><p class="dish-desc">Levain country loaf, 450 g.</p></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Whole Wheat Brown Bread Loaf</h4><span class="dish-price">₹80</span><p class="dish-desc">400 g.</p></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>NOMA Milk Rusk</h4><span class="dish-price">₹400</span><p class="dish-desc">Per kilo, from the home bakery.</p></div></li></ul></div>
+<div class="menu-panel" role="tabpanel" id="panel-hampers" aria-labelledby="tab-hampers" hidden><ul class="dish-grid"><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Darling Cookie Hamper</h4><span class="dish-price">₹839</span><p class="dish-desc">Four boxes of assorted cookies.</p></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Rakhi 4 Dessert Combo</h4><span class="dish-price">₹893</span><p class="dish-desc">Four eggless desserts in a clear carry bag.</p></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Love Bird’s Dessert Hamper Lux</h4><span class="dish-price">₹1,259</span><p class="dish-desc">Six eggless global desserts.</p></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Lux Dessert Hamper</h4><span class="dish-price">₹1,332</span><p class="dish-desc">Four tubs: chocolate truffle, kunafa, blueberry cheesecake, tres leches.</p></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Ultra Lux Dessert Hamper</h4><span class="dish-price">₹1,889</span><p class="dish-desc">Four desserts, a cookie box and chocolates.</p></div></li></ul></div>
+<div class="menu-panel" role="tabpanel" id="panel-bistro" aria-labelledby="tab-bistro" hidden><ul class="dish-grid"><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Butter Toast, 2 pcs</h4><span class="dish-price">₹53</span></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Double Egg Omelette, plain / masala</h4><span class="dish-price">₹74 / 105</span></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Double Egg Fried</h4><span class="dish-price">₹84</span><p class="dish-desc">Sunny side up or over easy. Well done ₹89.</p></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>French Fries, 100 g</h4><span class="dish-price">₹72</span><p class="dish-desc">Peri peri ₹83. 200 g from ₹146.</p></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Potato Cheese Nuggets, 8 pcs</h4><span class="dish-price">₹105</span><p class="dish-desc">With chipotle sauce.</p></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Garlic Chilli Potato Nuggets, 8 pcs</h4><span class="dish-price">₹125</span></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Hash Brown</h4><span class="dish-price">₹20</span><p class="dish-desc">Per piece.</p></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Exotic Vegetable Dimsums, 5 pcs</h4><span class="dish-price">₹110</span></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Paneer &amp; Vegetable Dimsums, 5 pcs</h4><span class="dish-price">₹135</span></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Exotic Chicken Dimsums, 5 pcs</h4><span class="dish-price">₹137</span><p class="dish-desc">With schezwan chutney.</p></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Corn &amp; Masala Paneer Samosa, 5 pcs</h4><span class="dish-price">₹135</span></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Chicken &amp; Cheese Samosa, 5 pcs</h4><span class="dish-price">₹131</span></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Hara Bhara Kebab, 5 pcs</h4><span class="dish-price">₹105</span></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Chickpea Falafel, 5 pcs</h4><span class="dish-price">₹147</span></div></li></ul></div>
+<div class="menu-panel" role="tabpanel" id="panel-burgers" aria-labelledby="tab-burgers" hidden><ul class="dish-grid"><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Chicken Chapli Smash Burger</h4><span class="dish-price">₹221</span><p class="dish-desc">Cumin, chilli and pomegranate seeds in a smashed chicken patty.</p></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>NOMA Chicken Club Burger</h4><span class="dish-price">₹156</span></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>NOMA Paneer Club Burger</h4><span class="dish-price">₹177</span></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>NOMA Veg Club Burger</h4><span class="dish-price">₹135</span></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>TIMA’s Chicken Burger</h4><span class="dish-price">₹93</span></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>TIMA’s Potato Burger</h4><span class="dish-price">₹83</span></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Chicken Seekh Kebab Hot Dog</h4><span class="dish-price">₹177</span></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Chicken or Paneer Malabar Paratha Roll</h4><span class="dish-price">₹177</span></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Cheese Chilli Melt Sandwich</h4><span class="dish-price">₹177</span></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Classic Avocado Toast</h4><span class="dish-price">₹177</span></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Roasted Chicken Cheese Chilli Melt</h4><span class="dish-price">₹219</span></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Chicken Mayo Sandwich</h4><span class="dish-price">₹219</span><p class="dish-desc">Butter pan-toasted ₹240.</p></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Lettuce, Tomato &amp; Cheese Sandwich</h4><span class="dish-price">₹158</span><p class="dish-desc">Pan grilled ₹179.</p></div></li></ul></div>
+<div class="menu-panel" role="tabpanel" id="panel-drinks" aria-labelledby="tab-drinks" hidden><ul class="dish-grid"><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Coorg Black Coffee</h4><span class="dish-price">₹72</span></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Coorg Milk Coffee</h4><span class="dish-price">₹105</span></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Classic Hot Chocolate</h4><span class="dish-price">₹158</span><p class="dish-desc">No added sugar.</p></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Shikanji: neembu, jamun or anar masala</h4><span class="dish-price">₹84</span><p class="dish-desc">200 ml.</p></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Veg Club Burger + Campa</h4><span class="dish-price">₹177</span></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Chicken Club Burger + Campa</h4><span class="dish-price">₹198</span></div></li><li class="dish-card no-photo"><div class="dish-pic"><span class="dish-img dish-img--empty" aria-hidden="true"></span></div><div class="dish-body"><h4>Cheese Chilli Melt + Campa</h4><span class="dish-price">₹209</span></div></li></ul></div>
+<!-- /MENU -->
     </section>
 
-    <section class="chef" aria-labelledby="chef-title">
-      <h2 id="chef-title">Chef Nesar Ahmad Noorullah</h2>
-      <p>Every brûlée, hamper and batch of rusk goes through Chef Nesar’s hands. He brought the desserts he loved from around the world back to Lucknow, and still does the torching himself.</p>
-      <p><a href="https://www.instagram.com/nesarnoorullah/" target="_blank" rel="noopener">Follow @nesarnoorullah on Instagram</a></p>
+    <!-- ===== Bakery ===== -->
+    <section class="bakery" id="bakery" aria-labelledby="bakery-title">
+      <div class="bakery-copy">
+        <h2 id="bakery-title">From the home bakery</h2>
+        <p id="bakery-intro">Levain sourdough, malai bread, cookies, brownies, and NOMA milk rusk by the kilo at ₹400. The bread dough uses RO water, and the buns are made with no chemicals.</p>
+        <a class="btn btn-light" href="https://wa.me/919811792837?text=Hi%20NOMA%20TIMA%2C%20I%27d%20like%20to%20order%20from%20the%20bakery" target="_blank" rel="noopener">Order bakery on WhatsApp</a>
+      </div>
+      <figure class="plate plate-lg bakery-a"><img id="bakery-img-a" src="assets/menu/breads.jpg" alt="Whole wheat sourdough loaf" loading="lazy" /></figure>
+      <figure class="plate bakery-b"><img id="bakery-img-b" src="assets/menu/sig-malai.jpg" alt="Malai bread topped with crushed nuts" loading="lazy" /></figure>
     </section>
 
+    <!-- ===== Hampers ===== -->
+    <section class="hampers" id="hampers" aria-labelledby="hampers-title">
+      <figure class="hamper-hero"><img id="hamper-img" src="assets/menu/hampers.jpg" alt="Ultra Lux dessert hamper: six desserts in a red NOMA box" loading="lazy" /></figure>
+      <div class="hampers-copy">
+        <h2 id="hampers-title">Hampers for giving</h2>
+        <p id="hampers-intro">Dessert and cookie hampers for Diwali, Rakhi, Eid, Valentine’s and birthdays, from ₹839 up to the ₹1,889 Ultra Lux. Message us on WhatsApp for bulk orders or a custom box.</p>
+        <ul class="hamper-list">
+          <li><span>Darling Cookie Hamper</span><span>₹839</span></li>
+          <li><span>Rakhi 4 Dessert Combo</span><span>₹893</span></li>
+          <li><span>Love Bird’s Dessert Hamper Lux</span><span>₹1,259</span></li>
+          <li><span>Lux Dessert Hamper</span><span>₹1,332</span></li>
+          <li><span>Ultra Lux Dessert Hamper</span><span>₹1,889</span></li>
+        </ul>
+        <a class="btn btn-light" href="https://wa.me/919811792837?text=Hi%20NOMA%20TIMA%2C%20I%27d%20like%20to%20order%20a%20hamper" target="_blank" rel="noopener">Order a hamper on WhatsApp</a>
+      </div>
+    </section>
+
+    <!-- ===== Order ===== -->
     <section class="order" id="order" aria-labelledby="order-title">
-      <h2 id="order-title">Order tonight</h2>
-      <p>We deliver across Lucknow through Swiggy and Zomato. For hampers, bulk orders and bakery, message us on WhatsApp.</p>
+      <h2 id="order-title">Order now</h2>
+      <p id="order-intro">The kitchen is open 24 hours and delivers across Lucknow through Swiggy and Zomato. For hampers, celebration cakes, bulk orders and the bakery, message us on WhatsApp.</p>
       <div class="order-links">
-        <a class="o-swiggy" href="https://www.swiggy.com/menu/1151527?source=sharing" target="_blank" rel="noopener">Order on Swiggy</a>
-        <a class="o-zomato" href="https://zomato.onelink.me/xqzv/fxqi03ck" target="_blank" rel="noopener">Order on Zomato</a>
+        <a class="o-swiggy" href="https://www.swiggy.com/direct/brand/661410?source=swiggy-direct&amp;subSource=generic" target="_blank" rel="noopener">Order on Swiggy</a>
+        <a class="o-zomato" href="https://link.zomato.com/xqzv/rshare?id=1120426813056311" target="_blank" rel="noopener">Order on Zomato</a>
         <a class="o-whatsapp" href="https://wa.me/919811792837?text=Hi%20NOMA%20TIMA%2C%20I%27d%20like%20to%20place%20an%20order" target="_blank" rel="noopener">Message on WhatsApp</a>
       </div>
     </section>
 
+    <!-- ===== Visit ===== -->
     <section class="visit" id="visit" aria-labelledby="visit-title">
-      <h2 id="visit-title">Find us</h2>
+      <h2 id="visit-title">Where we bake</h2>
+      <p class="visit-intro">NOMA TIMA is a cloud kitchen, open 24 hours. We bake here and deliver across Lucknow.</p>
       <address>
-        Beacon Street, Aliganj<br />
+        647/P 23-A, Plot 5, Nahar Road<br />
+        Near Scholar Valley School, Jankipuram Garden<br />
+        Janki Vihar Colony, Jankipuram<br />
         Lucknow, Uttar Pradesh 226021
       </address>
       <p class="visit-links">
         <a href="tel:+919811792837">Call +91 98117 92837</a>
+        <a href="mailto:team.nomatima@gmail.com">team.nomatima@gmail.com</a>
         <a href="https://share.google/7HovWpZnr3KLSlt3Y" target="_blank" rel="noopener">Open in Google Maps</a>
         <a href="https://www.instagram.com/noma.tima/" target="_blank" rel="noopener">See today’s specials on Instagram</a>
       </p>
@@ -256,11 +214,11 @@
   </main>
 
   <footer class="footer">
-    <p>NOMA TIMA, global dessert bar and bistro. Made in Lucknow.</p>
+    <p>NOMA TIMA, global dessert bar and bistro. Good food, great mood. Made in Lucknow.</p>
     <p>© <span id="year">2026</span></p>
   </footer>
 
   <script type="module" src="brulee.js"></script>
-  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script src="site.js" defer></script>
 </body>
 </html>

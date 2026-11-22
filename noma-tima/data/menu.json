@@ -1,0 +1,515 @@
+{
+ "categories": [
+  {
+   "key": "tres-leches",
+   "title": "Tres leches, pies and mousse",
+   "items": [
+    {
+     "name": "Noma Tres Leches",
+     "price": "209",
+     "desc": "Ultra-moist vanilla cake soaked in three milks, vanilla diplomat cream, toasted coconut."
+    },
+    {
+     "name": "Strawberry Tres Leches",
+     "price": "261",
+     "desc": "Three-milk sponge layered with strawberry compote and diplomat cream."
+    },
+    {
+     "name": "Matcha Berry Tres Leches",
+     "price": "251",
+     "desc": "Ceremonial matcha in the milk soak, topped with diplomat cream and fresh strawberries."
+    },
+    {
+     "name": "Mocha Matilda Pie",
+     "price": "209",
+     "desc": "Espresso-soaked chocolate sponge and dark chocolate ganache. Good warm or cold."
+    },
+    {
+     "name": "Strawberry Chocolate Matilda Pie",
+     "price": "251",
+     "desc": "Coffee-soaked chocolate sponge, dark ganache and strawberry compote."
+    },
+    {
+     "name": "Mango Dream Mousse",
+     "price": "146",
+     "desc": "Mango white chocolate mousse over vanilla cake with a mango glaze. Serves one."
+    }
+   ]
+  },
+  {
+   "key": "cheesecakes",
+   "title": "Cheesecakes",
+   "items": [
+    {
+     "name": "Vanilla Baked Yoghurt Cheesecake",
+     "price": "209",
+     "desc": "Yoghurt, condensed milk and fresh cream, baked and finished with diplomat cream."
+    },
+    {
+     "name": "Strawberry Baked Yoghurt Cheesecake",
+     "price": "251",
+     "desc": "Steam-baked with cream cheese, glazed with strawberry compote."
+    },
+    {
+     "name": "Mango Baked Yoghurt Cheesecake",
+     "price": "261",
+     "desc": "Glazed with mango compote. Good for two."
+    },
+    {
+     "name": "Blueberry Baked Yoghurt Cheesecake",
+     "price": "272",
+     "desc": "Glazed with blueberry compote."
+    },
+    {
+     "name": "Molten Strawberry Cheesecake",
+     "price": "261",
+     "desc": "Chilled molten cheesecake on a digestive crumble with Mahabaleshwar strawberry compote."
+    },
+    {
+     "name": "Molten Sea Salt Caramel Cheesecake",
+     "price": "272",
+     "desc": "House sea-salt caramel and roasted peanuts."
+    },
+    {
+     "name": "Blueberry Molten Cheesecake",
+     "price": "282",
+     "desc": "On a sablé cookie crust, bursting with blueberry compote."
+    },
+    {
+     "name": "Molten Biscoff Cheesecake",
+     "price": "314",
+     "desc": "Belgian speculoos paste on a sablé cookie crust."
+    }
+   ]
+  },
+  {
+   "key": "puddings",
+   "title": "Baked yoghurt puddings",
+   "items": [
+    {
+     "name": "Vanilla Baked Yoghurt Pudding",
+     "price": "158",
+     "desc": "Fresh yoghurt, fresh cream and condensed milk. Like our cheesecake, minus the crust."
+    },
+    {
+     "name": "Blueberry Compote Pudding",
+     "price": "168",
+     "desc": ""
+    },
+    {
+     "name": "Strawberry Compote Pudding",
+     "price": "168",
+     "desc": ""
+    },
+    {
+     "name": "Pineapple Compote Pudding",
+     "price": "168",
+     "desc": ""
+    },
+    {
+     "name": "Mango Baked Yoghurt Pudding",
+     "price": "177",
+     "desc": "Topped with fresh-cut mango. Gluten free, serves 1 to 2."
+    },
+    {
+     "name": "Hazelnut Crunch Pudding",
+     "price": "179",
+     "desc": ""
+    },
+    {
+     "name": "Lotus Biscoff Pudding",
+     "price": "179",
+     "desc": "Contains gluten."
+    },
+    {
+     "name": "Fresh Mango Pudding",
+     "price": "179",
+     "desc": "With seasonal mango compote."
+    }
+   ]
+  },
+  {
+   "key": "cakes",
+   "title": "Cakes and tubs",
+   "items": [
+    {
+     "name": "Chocolate Kunafa",
+     "price": "282",
+     "desc": "Ghee-roasted kunafa, pistachio mousseline, dark chocolate ganache."
+    },
+    {
+     "name": "TimaMisu",
+     "price": "261",
+     "desc": "Our tiramisu: espresso-soaked sponge, mascarpone, a hint of caramel, cocoa."
+    },
+    {
+     "name": "Chocolate Marquise",
+     "price": "282",
+     "desc": "Chocolate mousse, hazelnut praline crunch, a little orange zest."
+    },
+    {
+     "name": "Milk Forest",
+     "price": "230",
+     "desc": "Black forest, reworked: tiramisu-soaked sponge, dark cherries, milk chocolate."
+    },
+    {
+     "name": "Thai Ananas Tub Cake",
+     "price": "219",
+     "desc": "Stewed pineapple, coconut diplomat cream, vanilla sponge."
+    },
+    {
+     "name": "Mango Shortcake Tub",
+     "price": "251",
+     "desc": "Seasonal."
+    },
+    {
+     "name": "Strawberry Shortcake Tub, 150 g",
+     "price": "242",
+     "desc": "Medium tub ₹578."
+    },
+    {
+     "name": "British Chocolate Truffle Tub, 150 g",
+     "price": "314",
+     "desc": "Medium 400 g tub ₹734."
+    },
+    {
+     "name": "Chocolate or Strawberry Diplomat Cake, 100 g",
+     "price": "158",
+     "desc": ""
+    },
+    {
+     "name": "Banana Choco Walnut Cake, 150 g",
+     "price": "125",
+     "desc": "Banana tea cake with dark chocolate and cinnamon. 480 g ₹398."
+    }
+   ]
+  },
+  {
+   "key": "celebration",
+   "title": "Celebration cakes, 500 g",
+   "items": [
+    {
+     "name": "Chocolate Strawberry Cake",
+     "price": "839",
+     "desc": "Chef Nesar’s signature and one of our best sellers. Layered fresh to order."
+    },
+    {
+     "name": "British Chocolate & Hazelnut Cake",
+     "price": "839",
+     "desc": ""
+    },
+    {
+     "name": "Summer Mango Gateaux",
+     "price": "839",
+     "desc": "Takes 45 minutes or more. Schedule your delivery."
+    },
+    {
+     "name": "British Chocolate Truffle Cake",
+     "price": "734",
+     "desc": "Serves 5 to 6."
+    },
+    {
+     "name": "Strawberry Shortcake",
+     "price": "734",
+     "desc": ""
+    },
+    {
+     "name": "Winter Spiced Plum Cake",
+     "price": "683",
+     "desc": "250 g ₹368. Eggless 200 g ₹263."
+    }
+   ]
+  },
+  {
+   "key": "cookies",
+   "title": "Cookies and brownies",
+   "items": [
+    {
+     "name": "Giant Chocolate Chunk Cashew Cookie",
+     "price": "79",
+     "desc": "One 60 g cookie."
+    },
+    {
+     "name": "Almond Overload Cookies, 110 g",
+     "price": "105",
+     "desc": ""
+    },
+    {
+     "name": "Sesame Ajwain Cookies, 110 g",
+     "price": "105",
+     "desc": "A little sweet, a little salty. Made for chai."
+    },
+    {
+     "name": "Kunafa Cookies, 110 g",
+     "price": "126",
+     "desc": ""
+    },
+    {
+     "name": "Chocolate Chunk & Cashew Cookies, 110 g",
+     "price": "137",
+     "desc": ""
+    },
+    {
+     "name": "Dark Chocolate & Walnut Brownie",
+     "price": "158",
+     "desc": "Egg or eggless. Warm it for 15 seconds and add ice cream."
+    },
+    {
+     "name": "Date & Nut Chocolate Rocks, 100 g",
+     "price": "263",
+     "desc": ""
+    }
+   ]
+  },
+  {
+   "key": "breads",
+   "title": "Breads and malai bread",
+   "items": [
+    {
+     "name": "Rich Malai Bread with nuts",
+     "price": "116",
+     "desc": "Fresh malai with cashew, almond, pista and walnut. Caramelised toast ₹131."
+    },
+    {
+     "name": "Malai Bread with grain sugar",
+     "price": "84",
+     "desc": "Caramelised toast ₹100."
+    },
+    {
+     "name": "Whole Wheat Sourdough",
+     "price": "220",
+     "desc": "Levain country loaf, 450 g."
+    },
+    {
+     "name": "Whole Wheat Brown Bread Loaf",
+     "price": "80",
+     "desc": "400 g."
+    },
+    {
+     "name": "NOMA Milk Rusk",
+     "price": "400",
+     "desc": "Per kilo, from the home bakery."
+    }
+   ]
+  },
+  {
+   "key": "hampers",
+   "title": "Gift hampers",
+   "items": [
+    {
+     "name": "Darling Cookie Hamper",
+     "price": "839",
+     "desc": "Four boxes of assorted cookies."
+    },
+    {
+     "name": "Rakhi 4 Dessert Combo",
+     "price": "893",
+     "desc": "Four eggless desserts in a clear carry bag."
+    },
+    {
+     "name": "Love Bird’s Dessert Hamper Lux",
+     "price": "1,259",
+     "desc": "Six eggless global desserts."
+    },
+    {
+     "name": "Lux Dessert Hamper",
+     "price": "1,332",
+     "desc": "Four tubs: chocolate truffle, kunafa, blueberry cheesecake, tres leches."
+    },
+    {
+     "name": "Ultra Lux Dessert Hamper",
+     "price": "1,889",
+     "desc": "Four desserts, a cookie box and chocolates."
+    }
+   ]
+  },
+  {
+   "key": "bistro",
+   "title": "Bistro: breakfast and small plates",
+   "items": [
+    {
+     "name": "Butter Toast, 2 pcs",
+     "price": "53",
+     "desc": ""
+    },
+    {
+     "name": "Double Egg Omelette, plain / masala",
+     "price": "74 / 105",
+     "desc": ""
+    },
+    {
+     "name": "Double Egg Fried",
+     "price": "84",
+     "desc": "Sunny side up or over easy. Well done ₹89."
+    },
+    {
+     "name": "French Fries, 100 g",
+     "price": "72",
+     "desc": "Peri peri ₹83. 200 g from ₹146."
+    },
+    {
+     "name": "Potato Cheese Nuggets, 8 pcs",
+     "price": "105",
+     "desc": "With chipotle sauce."
+    },
+    {
+     "name": "Garlic Chilli Potato Nuggets, 8 pcs",
+     "price": "125",
+     "desc": ""
+    },
+    {
+     "name": "Hash Brown",
+     "price": "20",
+     "desc": "Per piece."
+    },
+    {
+     "name": "Exotic Vegetable Dimsums, 5 pcs",
+     "price": "110",
+     "desc": ""
+    },
+    {
+     "name": "Paneer & Vegetable Dimsums, 5 pcs",
+     "price": "135",
+     "desc": ""
+    },
+    {
+     "name": "Exotic Chicken Dimsums, 5 pcs",
+     "price": "137",
+     "desc": "With schezwan chutney."
+    },
+    {
+     "name": "Corn & Masala Paneer Samosa, 5 pcs",
+     "price": "135",
+     "desc": ""
+    },
+    {
+     "name": "Chicken & Cheese Samosa, 5 pcs",
+     "price": "131",
+     "desc": ""
+    },
+    {
+     "name": "Hara Bhara Kebab, 5 pcs",
+     "price": "105",
+     "desc": ""
+    },
+    {
+     "name": "Chickpea Falafel, 5 pcs",
+     "price": "147",
+     "desc": ""
+    }
+   ]
+  },
+  {
+   "key": "burgers",
+   "title": "Burgers, rolls and sandwiches",
+   "items": [
+    {
+     "name": "Chicken Chapli Smash Burger",
+     "price": "221",
+     "desc": "Cumin, chilli and pomegranate seeds in a smashed chicken patty."
+    },
+    {
+     "name": "NOMA Chicken Club Burger",
+     "price": "156",
+     "desc": ""
+    },
+    {
+     "name": "NOMA Paneer Club Burger",
+     "price": "177",
+     "desc": ""
+    },
+    {
+     "name": "NOMA Veg Club Burger",
+     "price": "135",
+     "desc": ""
+    },
+    {
+     "name": "TIMA’s Chicken Burger",
+     "price": "93",
+     "desc": ""
+    },
+    {
+     "name": "TIMA’s Potato Burger",
+     "price": "83",
+     "desc": ""
+    },
+    {
+     "name": "Chicken Seekh Kebab Hot Dog",
+     "price": "177",
+     "desc": ""
+    },
+    {
+     "name": "Chicken or Paneer Malabar Paratha Roll",
+     "price": "177",
+     "desc": ""
+    },
+    {
+     "name": "Cheese Chilli Melt Sandwich",
+     "price": "177",
+     "desc": ""
+    },
+    {
+     "name": "Classic Avocado Toast",
+     "price": "177",
+     "desc": ""
+    },
+    {
+     "name": "Roasted Chicken Cheese Chilli Melt",
+     "price": "219",
+     "desc": ""
+    },
+    {
+     "name": "Chicken Mayo Sandwich",
+     "price": "219",
+     "desc": "Butter pan-toasted ₹240."
+    },
+    {
+     "name": "Lettuce, Tomato & Cheese Sandwich",
+     "price": "158",
+     "desc": "Pan grilled ₹179."
+    }
+   ]
+  },
+  {
+   "key": "drinks",
+   "title": "Drinks and combos",
+   "items": [
+    {
+     "name": "Coorg Black Coffee",
+     "price": "72",
+     "desc": ""
+    },
+    {
+     "name": "Coorg Milk Coffee",
+     "price": "105",
+     "desc": ""
+    },
+    {
+     "name": "Classic Hot Chocolate",
+     "price": "158",
+     "desc": "No added sugar."
+    },
+    {
+     "name": "Shikanji: neembu, jamun or anar masala",
+     "price": "84",
+     "desc": "200 ml."
+    },
+    {
+     "name": "Veg Club Burger + Campa",
+     "price": "177",
+     "desc": ""
+    },
+    {
+     "name": "Chicken Club Burger + Campa",
+     "price": "198",
+     "desc": ""
+    },
+    {
+     "name": "Cheese Chilli Melt + Campa",
+     "price": "209",
+     "desc": ""
+    }
+   ]
+  }
+ ]
+}
