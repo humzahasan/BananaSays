@@ -1,0 +1,12 @@
+[
+ {"name": "Crème brûlée", "price": "", "line": "Cold, set custard under a sugar shell torched to order. Tap it and listen.", "photo_file": "assets/creme-brulee.jpg", "w": 352, "h": 279, "alt": "Crème brûlée with a torched sugar crust in an oval tray"},
+ {"name": "Chocolate Strawberry Cake", "price": "839", "line": "Chef Nesar’s signature. Chocolate and strawberry, layered fresh the day you order."},
+ {"name": "Chocolate Kunafa", "price": "282", "line": "Ghee-roasted kunafa crunch, pistachio mousseline, and a thick layer of dark chocolate ganache."},
+ {"name": "Molten Biscoff Cheesecake", "price": "314", "line": "Chilled cheesecake that runs when you cut it, Belgian speculoos on a sablé crust."},
+ {"name": "Strawberry Tres Leches", "price": "261", "line": "Sponge soaked through with three milks, layered with strawberry compote and diplomat cream."},
+ {"name": "TimaMisu", "price": "261", "line": "Our tiramisu. Espresso-soaked sponge, mascarpone, a hint of caramel, a dusting of cocoa."},
+ {"name": "Summer Mango Gateaux", "price": "839", "line": "Mango as a 500 g celebration cake. Made after you order, so allow 45 minutes."},
+ {"name": "Blueberry Molten Cheesecake", "price": "282", "line": "Sablé cookie crust, soft chilled cheesecake, and blueberry compote that breaks through."},
+ {"name": "Rich Malai Bread with nuts", "display": "Malai bread", "price": "116", "line": "Thick bread under fresh malai with grain sugar or crushed nuts. Soft, or caramelised."},
+ {"name": "Ultra Lux Dessert Hamper", "price": "1,889", "line": "Four desserts, a box of cookies and chocolates, packed to give."}
+]
