@@ -15,6 +15,9 @@ Run locally with any static server, e.g. `python3 -m http.server` in this folder
 
 The design follows the `frontend-design` skill from https://github.com/anthropics/skills.
 
+## Editing the menu
+Dishes, prices and descriptions live in `data/menu.json`; the ten showcase desserts in `data/signatures.json`. After editing, run `python3 tools/build.py` to regenerate the menu and carousel in `index.html`. Photos are matched by dish name through `assets/dishes/manifest.json` (cropped from the printed menu and upscaled 4x with EDSR). `assets/real/` holds real product photos from the WhatsApp catalogue.
+
 ## Before launch
 - Confirm the phone/WhatsApp number (9811792837). It was read from a poster.
 - Add opening hours once known.

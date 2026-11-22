@@ -668,7 +668,7 @@
   "name": "TIMA’s Potato Burger",
   "category": "burgers",
   "w": 728,
-  "h": 368,
+  "h": 356,
   "hero": false
  },
  "chicken-seekh-kebab-hot-dog": {
@@ -772,7 +772,7 @@
   "name": "Chicken Club Burger + Campa",
   "category": "drinks",
   "w": 800,
-  "h": 424,
+  "h": 467,
   "hero": false
  },
  "cheese-chilli-melt-campa": {

@@ -127,7 +127,7 @@ h2 { font-size: clamp(40px, 6vw, 76px); }
   background: radial-gradient(circle at 50% 45%, #f3e6cc 0 55%, #e3cfac 70%, #d6bf98 100%);
   box-shadow: inset 0 0 0 10px rgba(255, 255, 255, 0.25), 0 24px 40px -24px rgba(46, 23, 11, 0.55);
 }
-.plate img { width: 100%; height: 100%; object-fit: cover; transform: scale(1.12); transition: transform 0.6s ease; }
+.plate img { display: block; width: 100%; height: 100%; aspect-ratio: 1; object-fit: cover; transform: scale(1.12); transition: transform 0.6s ease; }
 
 /* ---------- The Maestro ---------- */
 .maestro {
@@ -224,7 +224,7 @@ h2 { font-size: clamp(40px, 6vw, 76px); }
 .dish-grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 40px 28px; }
 .dish-card { display: flex; flex-direction: column; }
 .dish-pic { width: min(200px, 80%); margin: 0 auto; }
-.dish-pic .dish-img { display: block; width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 50%; transform: scale(1); background: #efe1c4; box-shadow: 0 20px 32px -22px rgba(46, 23, 11, 0.6); }
+.dish-pic .dish-img { display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; border-radius: 50%; transform: scale(1); background: #efe1c4; box-shadow: 0 20px 32px -22px rgba(46, 23, 11, 0.6); }
 .dish-img--empty { background: radial-gradient(circle at 50% 45%, #f3e6cc 0 55%, #e3cfac 70%, #d6bf98 100%) !important; }
 .dish-body { margin-top: 18px; display: grid; grid-template-columns: 1fr auto; column-gap: 12px; }
 .dish-body h4 { margin: 0; font-size: 18px; line-height: 1.3; }

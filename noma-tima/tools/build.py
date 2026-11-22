@@ -22,7 +22,8 @@ def load(name, default):
 menu = load("data/menu.json", {"categories": []})
 sigs = load("data/signatures.json", [])
 manifest = load("assets/dishes/manifest.json", {})
-by_name = {v["name"].lower(): v for v in manifest.values()}
+by_name = {v["name"].lower(): v for v in manifest.values() if not v.get("hero")}
+hero_by_name = {v["name"].lower(): v for v in manifest.values() if v.get("hero")}
 by_slug = manifest
 
 
@@ -30,8 +31,8 @@ def photo_for(name=None, slug=None, hero=False):
     item = by_slug.get(slug) if slug else by_name.get((name or "").lower())
     if not item:
         return None
-    if hero and item.get("hero_file"):
-        return {**item, "file": item["hero_file"], "w": item.get("hero_w", item["w"]), "h": item.get("hero_h", item["h"])}
+    if hero and item and (item["name"].lower() in hero_by_name):
+        return hero_by_name[item["name"].lower()]
     return item
 
 
@@ -49,7 +50,7 @@ def price(p):
 # ---------- Signatures strip ----------
 sig_html = ['<ol class="sig-track" id="sig-track">']
 for s in sigs:
-    item = photo_for(slug=s.get("photo"), name=s["name"], hero=True)
+    item = photo_for(slug=s.get("photo"), name=s["name"])
     if s.get("photo_file"):
         item = {"file": s["photo_file"], "w": s.get("w", 900), "h": s.get("h", 700)}
     pic = img_tag(item, s.get("alt", s["name"]), "sig-img") if item else '<span class="sig-img sig-img--empty"></span>'
