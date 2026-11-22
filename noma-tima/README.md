@@ -9,6 +9,8 @@ The opening section is an interactive 3D crème brûlée (Three.js): drag across
 - `brulee.js`: the 3D brûlée scene (Three.js 0.160 from jsDelivr, no build step)
 - `assets/`: photos (`assets/menu/` holds dish photos cropped from the printed menu PDF)
 
+Live at https://humzahasan.github.io/BananaSays/ once GitHub Pages is on (Settings → Pages → Source: GitHub Actions). `.github/workflows/pages.yml` redeploys on every push to `master` that touches `noma-tima/`.
+
 Run locally with any static server, e.g. `python3 -m http.server` in this folder. ES modules don't load over `file://`.
 
 The design follows the `frontend-design` skill from https://github.com/anthropics/skills.
