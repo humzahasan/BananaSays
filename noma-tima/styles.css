@@ -213,3 +213,20 @@ h2 { font-size: clamp(40px, 6vw, 76px); }
 .mi-name { font-weight: 700; }
 .mi-price { font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; }
 .mi-desc { grid-column: 1 / -1; font-size: 16px; color: rgba(46, 23, 11, 0.78); max-width: 56ch; }
+
+/* ---------- Menu photos (cropped from the printed menu; cream backgrounds blend into the page) ---------- */
+.dish { display: grid; grid-template-columns: minmax(0, 1fr) auto; column-gap: 24px; align-items: center; }
+.dish dt, .dish dd:not(.dish-photo) { grid-column: 1; }
+.dish-photo { grid-column: 2; grid-row: 1 / span 2; margin: 0; }
+.dish-photo img { width: clamp(96px, 12vw, 168px); height: auto; mix-blend-mode: multiply; }
+.mgroup-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; margin-bottom: 12px; }
+.mgroup-head h3 { margin: 0 0 6px; }
+.mgroup-photo { flex: none; width: auto; height: clamp(88px, 9vw, 120px); max-width: 55%; object-fit: contain; mix-blend-mode: multiply; }
+@media (max-width: 860px) {
+  .dish-photo img { width: 96px; }
+}
+/* Feather the photo edges so the printed menu's cream backdrop melts into the page. */
+.dish-photo img, .mgroup-photo {
+  -webkit-mask-image: radial-gradient(ellipse 50% 50% at 50% 50%, #000 62%, transparent 100%);
+          mask-image: radial-gradient(ellipse 50% 50% at 50% 50%, #000 62%, transparent 100%);
+}

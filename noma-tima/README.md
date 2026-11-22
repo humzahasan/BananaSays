@@ -7,7 +7,7 @@ The opening section is an interactive 3D crème brûlée (Three.js): drag across
 - `index.html`: the page
 - `styles.css`: styles
 - `brulee.js`: the 3D brûlée scene (Three.js 0.160 from jsDelivr, no build step)
-- `assets/`: photos
+- `assets/`: photos (`assets/menu/` holds dish photos cropped from the printed menu PDF)
 
 Run locally with any static server, e.g. `python3 -m http.server` in this folder. ES modules don't load over `file://`.
 
