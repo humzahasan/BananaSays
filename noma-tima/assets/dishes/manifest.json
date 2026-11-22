@@ -1,0 +1,810 @@
+{
+ "noma-tres-leches": {
+  "file": "assets/dishes/noma-tres-leches.webp",
+  "name": "Noma Tres Leches",
+  "category": "tres-leches",
+  "w": 808,
+  "h": 492,
+  "hero": false
+ },
+ "strawberry-tres-leches": {
+  "file": "assets/dishes/strawberry-tres-leches.webp",
+  "name": "Strawberry Tres Leches",
+  "category": "tres-leches",
+  "w": 800,
+  "h": 465,
+  "hero": false
+ },
+ "strawberry-tres-leches-hero": {
+  "file": "assets/dishes/strawberry-tres-leches-hero.webp",
+  "name": "Strawberry Tres Leches",
+  "category": "tres-leches",
+  "w": 1400,
+  "h": 814,
+  "hero": true
+ },
+ "matcha-berry-tres-leches": {
+  "file": "assets/dishes/matcha-berry-tres-leches.webp",
+  "name": "Matcha Berry Tres Leches",
+  "category": "tres-leches",
+  "w": 808,
+  "h": 468,
+  "hero": false
+ },
+ "mocha-matilda-pie": {
+  "file": "assets/dishes/mocha-matilda-pie.webp",
+  "name": "Mocha Matilda Pie",
+  "category": "tres-leches",
+  "w": 808,
+  "h": 472,
+  "hero": false
+ },
+ "strawberry-chocolate-matilda-pie": {
+  "file": "assets/dishes/strawberry-chocolate-matilda-pie.webp",
+  "name": "Strawberry Chocolate Matilda Pie",
+  "category": "tres-leches",
+  "w": 800,
+  "h": 485,
+  "hero": false
+ },
+ "mango-dream-mousse": {
+  "file": "assets/dishes/mango-dream-mousse.webp",
+  "name": "Mango Dream Mousse",
+  "category": "tres-leches",
+  "w": 800,
+  "h": 461,
+  "hero": false
+ },
+ "vanilla-baked-yoghurt-cheesecake": {
+  "file": "assets/dishes/vanilla-baked-yoghurt-cheesecake.webp",
+  "name": "Vanilla Baked Yoghurt Cheesecake",
+  "category": "cheesecakes",
+  "w": 800,
+  "h": 469,
+  "hero": false
+ },
+ "strawberry-baked-yoghurt-cheesecake": {
+  "file": "assets/dishes/strawberry-baked-yoghurt-cheesecake.webp",
+  "name": "Strawberry Baked Yoghurt Cheesecake",
+  "category": "cheesecakes",
+  "w": 800,
+  "h": 478,
+  "hero": false
+ },
+ "mango-baked-yoghurt-cheesecake": {
+  "file": "assets/dishes/mango-baked-yoghurt-cheesecake.webp",
+  "name": "Mango Baked Yoghurt Cheesecake",
+  "category": "cheesecakes",
+  "w": 800,
+  "h": 465,
+  "hero": false
+ },
+ "blueberry-baked-yoghurt-cheesecake": {
+  "file": "assets/dishes/blueberry-baked-yoghurt-cheesecake.webp",
+  "name": "Blueberry Baked Yoghurt Cheesecake",
+  "category": "cheesecakes",
+  "w": 800,
+  "h": 479,
+  "hero": false
+ },
+ "molten-strawberry-cheesecake": {
+  "file": "assets/dishes/molten-strawberry-cheesecake.webp",
+  "name": "Molten Strawberry Cheesecake",
+  "category": "cheesecakes",
+  "w": 792,
+  "h": 524,
+  "hero": false
+ },
+ "molten-sea-salt-caramel-cheesecake": {
+  "file": "assets/dishes/molten-sea-salt-caramel-cheesecake.webp",
+  "name": "Molten Sea Salt Caramel Cheesecake",
+  "category": "cheesecakes",
+  "w": 800,
+  "h": 524,
+  "hero": false
+ },
+ "blueberry-molten-cheesecake": {
+  "file": "assets/dishes/blueberry-molten-cheesecake.webp",
+  "name": "Blueberry Molten Cheesecake",
+  "category": "cheesecakes",
+  "w": 804,
+  "h": 524,
+  "hero": false
+ },
+ "blueberry-molten-cheesecake-hero": {
+  "file": "assets/dishes/blueberry-molten-cheesecake-hero.webp",
+  "name": "Blueberry Molten Cheesecake",
+  "category": "cheesecakes",
+  "w": 1400,
+  "h": 912,
+  "hero": true
+ },
+ "molten-biscoff-cheesecake": {
+  "file": "assets/dishes/molten-biscoff-cheesecake.webp",
+  "name": "Molten Biscoff Cheesecake",
+  "category": "cheesecakes",
+  "w": 796,
+  "h": 552,
+  "hero": false
+ },
+ "molten-biscoff-cheesecake-hero": {
+  "file": "assets/dishes/molten-biscoff-cheesecake-hero.webp",
+  "name": "Molten Biscoff Cheesecake",
+  "category": "cheesecakes",
+  "w": 1400,
+  "h": 971,
+  "hero": true
+ },
+ "vanilla-baked-yoghurt-pudding": {
+  "file": "assets/dishes/vanilla-baked-yoghurt-pudding.webp",
+  "name": "Vanilla Baked Yoghurt Pudding",
+  "category": "puddings",
+  "w": 800,
+  "h": 726,
+  "hero": false
+ },
+ "blueberry-compote-pudding": {
+  "file": "assets/dishes/blueberry-compote-pudding.webp",
+  "name": "Blueberry Compote Pudding",
+  "category": "puddings",
+  "w": 796,
+  "h": 756,
+  "hero": false
+ },
+ "strawberry-compote-pudding": {
+  "file": "assets/dishes/strawberry-compote-pudding.webp",
+  "name": "Strawberry Compote Pudding",
+  "category": "puddings",
+  "w": 800,
+  "h": 731,
+  "hero": false
+ },
+ "pineapple-compote-pudding": {
+  "file": "assets/dishes/pineapple-compote-pudding.webp",
+  "name": "Pineapple Compote Pudding",
+  "category": "puddings",
+  "w": 800,
+  "h": 744,
+  "hero": false
+ },
+ "mango-baked-yoghurt-pudding": {
+  "file": "assets/dishes/mango-baked-yoghurt-pudding.webp",
+  "name": "Mango Baked Yoghurt Pudding",
+  "category": "puddings",
+  "w": 800,
+  "h": 663,
+  "hero": false
+ },
+ "hazelnut-crunch-pudding": {
+  "file": "assets/dishes/hazelnut-crunch-pudding.webp",
+  "name": "Hazelnut Crunch Pudding",
+  "category": "puddings",
+  "w": 776,
+  "h": 692,
+  "hero": false
+ },
+ "lotus-biscoff-pudding": {
+  "file": "assets/dishes/lotus-biscoff-pudding.webp",
+  "name": "Lotus Biscoff Pudding",
+  "category": "puddings",
+  "w": 788,
+  "h": 712,
+  "hero": false
+ },
+ "fresh-mango-pudding": {
+  "file": "assets/dishes/fresh-mango-pudding.webp",
+  "name": "Fresh Mango Pudding",
+  "category": "puddings",
+  "w": 800,
+  "h": 681,
+  "hero": false
+ },
+ "chocolate-kunafa": {
+  "file": "assets/dishes/chocolate-kunafa.webp",
+  "name": "Chocolate Kunafa",
+  "category": "cakes",
+  "w": 800,
+  "h": 545,
+  "hero": false
+ },
+ "chocolate-kunafa-hero": {
+  "file": "assets/dishes/chocolate-kunafa-hero.webp",
+  "name": "Chocolate Kunafa",
+  "category": "cakes",
+  "w": 1400,
+  "h": 954,
+  "hero": true
+ },
+ "timamisu": {
+  "file": "assets/dishes/timamisu.webp",
+  "name": "TimaMisu",
+  "category": "cakes",
+  "w": 800,
+  "h": 513,
+  "hero": false
+ },
+ "timamisu-hero": {
+  "file": "assets/dishes/timamisu-hero.webp",
+  "name": "TimaMisu",
+  "category": "cakes",
+  "w": 1400,
+  "h": 898,
+  "hero": true
+ },
+ "chocolate-marquise": {
+  "file": "assets/dishes/chocolate-marquise.webp",
+  "name": "Chocolate Marquise",
+  "category": "cakes",
+  "w": 800,
+  "h": 551,
+  "hero": false
+ },
+ "milk-forest": {
+  "file": "assets/dishes/milk-forest.webp",
+  "name": "Milk Forest",
+  "category": "cakes",
+  "w": 800,
+  "h": 525,
+  "hero": false
+ },
+ "thai-ananas-tub-cake": {
+  "file": "assets/dishes/thai-ananas-tub-cake.webp",
+  "name": "Thai Ananas Tub Cake",
+  "category": "cakes",
+  "w": 656,
+  "h": 408,
+  "hero": false
+ },
+ "mango-shortcake-tub": {
+  "file": "assets/dishes/mango-shortcake-tub.webp",
+  "name": "Mango Shortcake Tub",
+  "category": "cakes",
+  "w": 636,
+  "h": 460,
+  "hero": false
+ },
+ "strawberry-shortcake-tub-150-g": {
+  "file": "assets/dishes/strawberry-shortcake-tub-150-g.webp",
+  "name": "Strawberry Shortcake Tub, 150 g",
+  "category": "cakes",
+  "w": 616,
+  "h": 428,
+  "hero": false
+ },
+ "british-chocolate-truffle-tub-150-g": {
+  "file": "assets/dishes/british-chocolate-truffle-tub-150-g.webp",
+  "name": "British Chocolate Truffle Tub, 150 g",
+  "category": "cakes",
+  "w": 636,
+  "h": 468,
+  "hero": false
+ },
+ "chocolate-or-strawberry-diplomat-cake-100-g": {
+  "file": "assets/dishes/chocolate-or-strawberry-diplomat-cake-100-g.webp",
+  "name": "Chocolate or Strawberry Diplomat Cake, 100 g",
+  "category": "cakes",
+  "w": 800,
+  "h": 506,
+  "hero": false
+ },
+ "banana-choco-walnut-cake-150-g": {
+  "file": "assets/dishes/banana-choco-walnut-cake-150-g.webp",
+  "name": "Banana Choco Walnut Cake, 150 g",
+  "category": "cakes",
+  "w": 800,
+  "h": 464,
+  "hero": false
+ },
+ "chocolate-strawberry-cake": {
+  "file": "assets/dishes/chocolate-strawberry-cake.webp",
+  "name": "Chocolate Strawberry Cake",
+  "category": "celebration",
+  "w": 800,
+  "h": 490,
+  "hero": false
+ },
+ "chocolate-strawberry-cake-hero": {
+  "file": "assets/dishes/chocolate-strawberry-cake-hero.webp",
+  "name": "Chocolate Strawberry Cake",
+  "category": "celebration",
+  "w": 1400,
+  "h": 858,
+  "hero": true
+ },
+ "british-chocolate-and-hazelnut-cake": {
+  "file": "assets/dishes/british-chocolate-and-hazelnut-cake.webp",
+  "name": "British Chocolate & Hazelnut Cake",
+  "category": "celebration",
+  "w": 800,
+  "h": 431,
+  "hero": false
+ },
+ "summer-mango-gateaux": {
+  "file": "assets/dishes/summer-mango-gateaux.webp",
+  "name": "Summer Mango Gateaux",
+  "category": "celebration",
+  "w": 800,
+  "h": 446,
+  "hero": false
+ },
+ "summer-mango-gateaux-hero": {
+  "file": "assets/dishes/summer-mango-gateaux-hero.webp",
+  "name": "Summer Mango Gateaux",
+  "category": "celebration",
+  "w": 1400,
+  "h": 781,
+  "hero": true
+ },
+ "british-chocolate-truffle-cake": {
+  "file": "assets/dishes/british-chocolate-truffle-cake.webp",
+  "name": "British Chocolate Truffle Cake",
+  "category": "celebration",
+  "w": 756,
+  "h": 516,
+  "hero": false
+ },
+ "strawberry-shortcake": {
+  "file": "assets/dishes/strawberry-shortcake.webp",
+  "name": "Strawberry Shortcake",
+  "category": "celebration",
+  "w": 796,
+  "h": 576,
+  "hero": false
+ },
+ "winter-spiced-plum-cake": {
+  "file": "assets/dishes/winter-spiced-plum-cake.webp",
+  "name": "Winter Spiced Plum Cake",
+  "category": "celebration",
+  "w": 800,
+  "h": 516,
+  "hero": false
+ },
+ "giant-chocolate-chunk-cashew-cookie": {
+  "file": "assets/dishes/giant-chocolate-chunk-cashew-cookie.webp",
+  "name": "Giant Chocolate Chunk Cashew Cookie",
+  "category": "cookies",
+  "w": 800,
+  "h": 529,
+  "hero": false
+ },
+ "almond-overload-cookies-110-g": {
+  "file": "assets/dishes/almond-overload-cookies-110-g.webp",
+  "name": "Almond Overload Cookies, 110 g",
+  "category": "cookies",
+  "w": 800,
+  "h": 594,
+  "hero": false
+ },
+ "sesame-ajwain-cookies-110-g": {
+  "file": "assets/dishes/sesame-ajwain-cookies-110-g.webp",
+  "name": "Sesame Ajwain Cookies, 110 g",
+  "category": "cookies",
+  "w": 800,
+  "h": 557,
+  "hero": false
+ },
+ "kunafa-cookies-110-g": {
+  "file": "assets/dishes/kunafa-cookies-110-g.webp",
+  "name": "Kunafa Cookies, 110 g",
+  "category": "cookies",
+  "w": 800,
+  "h": 543,
+  "hero": false
+ },
+ "chocolate-chunk-and-cashew-cookies-110-g": {
+  "file": "assets/dishes/chocolate-chunk-and-cashew-cookies-110-g.webp",
+  "name": "Chocolate Chunk & Cashew Cookies, 110 g",
+  "category": "cookies",
+  "w": 800,
+  "h": 558,
+  "hero": false
+ },
+ "dark-chocolate-and-walnut-brownie": {
+  "file": "assets/dishes/dark-chocolate-and-walnut-brownie.webp",
+  "name": "Dark Chocolate & Walnut Brownie",
+  "category": "cookies",
+  "w": 800,
+  "h": 566,
+  "hero": false
+ },
+ "dark-chocolate-and-walnut-brownie-hero": {
+  "file": "assets/dishes/dark-chocolate-and-walnut-brownie-hero.webp",
+  "name": "Dark Chocolate & Walnut Brownie",
+  "category": "cookies",
+  "w": 1400,
+  "h": 990,
+  "hero": true
+ },
+ "date-and-nut-chocolate-rocks-100-g": {
+  "file": "assets/dishes/date-and-nut-chocolate-rocks-100-g.webp",
+  "name": "Date & Nut Chocolate Rocks, 100 g",
+  "category": "cookies",
+  "w": 800,
+  "h": 646,
+  "hero": false
+ },
+ "rich-malai-bread-with-nuts": {
+  "file": "assets/dishes/rich-malai-bread-with-nuts.webp",
+  "name": "Rich Malai Bread with nuts",
+  "category": "breads",
+  "w": 800,
+  "h": 328,
+  "hero": false
+ },
+ "rich-malai-bread-with-nuts-hero": {
+  "file": "assets/dishes/rich-malai-bread-with-nuts-hero.webp",
+  "name": "Rich Malai Bread with nuts",
+  "category": "breads",
+  "w": 1400,
+  "h": 575,
+  "hero": true
+ },
+ "malai-bread-with-grain-sugar": {
+  "file": "assets/dishes/malai-bread-with-grain-sugar.webp",
+  "name": "Malai Bread with grain sugar",
+  "category": "breads",
+  "w": 800,
+  "h": 305,
+  "hero": false
+ },
+ "whole-wheat-sourdough": {
+  "file": "assets/dishes/whole-wheat-sourdough.webp",
+  "name": "Whole Wheat Sourdough",
+  "category": "breads",
+  "w": 800,
+  "h": 347,
+  "hero": false
+ },
+ "whole-wheat-brown-bread-loaf": {
+  "file": "assets/dishes/whole-wheat-brown-bread-loaf.webp",
+  "name": "Whole Wheat Brown Bread Loaf",
+  "category": "breads",
+  "w": 800,
+  "h": 330,
+  "hero": false
+ },
+ "darling-cookie-hamper": {
+  "file": "assets/dishes/darling-cookie-hamper.webp",
+  "name": "Darling Cookie Hamper",
+  "category": "hampers",
+  "w": 808,
+  "h": 640,
+  "hero": false
+ },
+ "rakhi-4-dessert-combo": {
+  "file": "assets/dishes/rakhi-4-dessert-combo.webp",
+  "name": "Rakhi 4 Dessert Combo",
+  "category": "hampers",
+  "w": 676,
+  "h": 660,
+  "hero": false
+ },
+ "love-birds-dessert-hamper-lux": {
+  "file": "assets/dishes/love-birds-dessert-hamper-lux.webp",
+  "name": "Love Bird’s Dessert Hamper Lux",
+  "category": "hampers",
+  "w": 776,
+  "h": 716,
+  "hero": false
+ },
+ "lux-dessert-hamper": {
+  "file": "assets/dishes/lux-dessert-hamper.webp",
+  "name": "Lux Dessert Hamper",
+  "category": "hampers",
+  "w": 756,
+  "h": 672,
+  "hero": false
+ },
+ "ultra-lux-dessert-hamper": {
+  "file": "assets/dishes/ultra-lux-dessert-hamper.webp",
+  "name": "Ultra Lux Dessert Hamper",
+  "category": "hampers",
+  "w": 800,
+  "h": 324,
+  "hero": false
+ },
+ "ultra-lux-dessert-hamper-hero": {
+  "file": "assets/dishes/ultra-lux-dessert-hamper-hero.webp",
+  "name": "Ultra Lux Dessert Hamper",
+  "category": "hampers",
+  "w": 1400,
+  "h": 566,
+  "hero": true
+ },
+ "butter-toast-2-pcs": {
+  "file": "assets/dishes/butter-toast-2-pcs.webp",
+  "name": "Butter Toast, 2 pcs",
+  "category": "bistro",
+  "w": 800,
+  "h": 352,
+  "hero": false
+ },
+ "double-egg-omelette-plain-masala": {
+  "file": "assets/dishes/double-egg-omelette-plain-masala.webp",
+  "name": "Double Egg Omelette, plain / masala",
+  "category": "bistro",
+  "w": 800,
+  "h": 387,
+  "hero": false
+ },
+ "double-egg-fried": {
+  "file": "assets/dishes/double-egg-fried.webp",
+  "name": "Double Egg Fried",
+  "category": "bistro",
+  "w": 800,
+  "h": 387,
+  "hero": false
+ },
+ "french-fries-100-g": {
+  "file": "assets/dishes/french-fries-100-g.webp",
+  "name": "French Fries, 100 g",
+  "category": "bistro",
+  "w": 800,
+  "h": 559,
+  "hero": false
+ },
+ "potato-cheese-nuggets-8-pcs": {
+  "file": "assets/dishes/potato-cheese-nuggets-8-pcs.webp",
+  "name": "Potato Cheese Nuggets, 8 pcs",
+  "category": "bistro",
+  "w": 800,
+  "h": 542,
+  "hero": false
+ },
+ "garlic-chilli-potato-nuggets-8-pcs": {
+  "file": "assets/dishes/garlic-chilli-potato-nuggets-8-pcs.webp",
+  "name": "Garlic Chilli Potato Nuggets, 8 pcs",
+  "category": "bistro",
+  "w": 800,
+  "h": 467,
+  "hero": false
+ },
+ "hash-brown": {
+  "file": "assets/dishes/hash-brown.webp",
+  "name": "Hash Brown",
+  "category": "bistro",
+  "w": 800,
+  "h": 489,
+  "hero": false
+ },
+ "exotic-vegetable-dimsums-5-pcs": {
+  "file": "assets/dishes/exotic-vegetable-dimsums-5-pcs.webp",
+  "name": "Exotic Vegetable Dimsums, 5 pcs",
+  "category": "bistro",
+  "w": 800,
+  "h": 421,
+  "hero": false
+ },
+ "paneer-and-vegetable-dimsums-5-pcs": {
+  "file": "assets/dishes/paneer-and-vegetable-dimsums-5-pcs.webp",
+  "name": "Paneer & Vegetable Dimsums, 5 pcs",
+  "category": "bistro",
+  "w": 800,
+  "h": 450,
+  "hero": false
+ },
+ "exotic-chicken-dimsums-5-pcs": {
+  "file": "assets/dishes/exotic-chicken-dimsums-5-pcs.webp",
+  "name": "Exotic Chicken Dimsums, 5 pcs",
+  "category": "bistro",
+  "w": 800,
+  "h": 406,
+  "hero": false
+ },
+ "corn-and-masala-paneer-samosa-5-pcs": {
+  "file": "assets/dishes/corn-and-masala-paneer-samosa-5-pcs.webp",
+  "name": "Corn & Masala Paneer Samosa, 5 pcs",
+  "category": "bistro",
+  "w": 800,
+  "h": 388,
+  "hero": false
+ },
+ "chicken-and-cheese-samosa-5-pcs": {
+  "file": "assets/dishes/chicken-and-cheese-samosa-5-pcs.webp",
+  "name": "Chicken & Cheese Samosa, 5 pcs",
+  "category": "bistro",
+  "w": 800,
+  "h": 433,
+  "hero": false
+ },
+ "hara-bhara-kebab-5-pcs": {
+  "file": "assets/dishes/hara-bhara-kebab-5-pcs.webp",
+  "name": "Hara Bhara Kebab, 5 pcs",
+  "category": "bistro",
+  "w": 800,
+  "h": 289,
+  "hero": false
+ },
+ "chickpea-falafel-5-pcs": {
+  "file": "assets/dishes/chickpea-falafel-5-pcs.webp",
+  "name": "Chickpea Falafel, 5 pcs",
+  "category": "bistro",
+  "w": 800,
+  "h": 374,
+  "hero": false
+ },
+ "chicken-chapli-smash-burger": {
+  "file": "assets/dishes/chicken-chapli-smash-burger.webp",
+  "name": "Chicken Chapli Smash Burger",
+  "category": "burgers",
+  "w": 684,
+  "h": 332,
+  "hero": false
+ },
+ "noma-chicken-club-burger": {
+  "file": "assets/dishes/noma-chicken-club-burger.webp",
+  "name": "NOMA Chicken Club Burger",
+  "category": "burgers",
+  "w": 664,
+  "h": 348,
+  "hero": false
+ },
+ "noma-paneer-club-burger": {
+  "file": "assets/dishes/noma-paneer-club-burger.webp",
+  "name": "NOMA Paneer Club Burger",
+  "category": "burgers",
+  "w": 720,
+  "h": 392,
+  "hero": false
+ },
+ "noma-veg-club-burger": {
+  "file": "assets/dishes/noma-veg-club-burger.webp",
+  "name": "NOMA Veg Club Burger",
+  "category": "burgers",
+  "w": 704,
+  "h": 384,
+  "hero": false
+ },
+ "timas-chicken-burger": {
+  "file": "assets/dishes/timas-chicken-burger.webp",
+  "name": "TIMA’s Chicken Burger",
+  "category": "burgers",
+  "w": 720,
+  "h": 344,
+  "hero": false
+ },
+ "timas-potato-burger": {
+  "file": "assets/dishes/timas-potato-burger.webp",
+  "name": "TIMA’s Potato Burger",
+  "category": "burgers",
+  "w": 728,
+  "h": 368,
+  "hero": false
+ },
+ "chicken-seekh-kebab-hot-dog": {
+  "file": "assets/dishes/chicken-seekh-kebab-hot-dog.webp",
+  "name": "Chicken Seekh Kebab Hot Dog",
+  "category": "burgers",
+  "w": 756,
+  "h": 376,
+  "hero": false
+ },
+ "chicken-or-paneer-malabar-paratha-roll": {
+  "file": "assets/dishes/chicken-or-paneer-malabar-paratha-roll.webp",
+  "name": "Chicken or Paneer Malabar Paratha Roll",
+  "category": "burgers",
+  "w": 780,
+  "h": 324,
+  "hero": false
+ },
+ "cheese-chilli-melt-sandwich": {
+  "file": "assets/dishes/cheese-chilli-melt-sandwich.webp",
+  "name": "Cheese Chilli Melt Sandwich",
+  "category": "burgers",
+  "w": 800,
+  "h": 409,
+  "hero": false
+ },
+ "classic-avocado-toast": {
+  "file": "assets/dishes/classic-avocado-toast.webp",
+  "name": "Classic Avocado Toast",
+  "category": "burgers",
+  "w": 800,
+  "h": 517,
+  "hero": false
+ },
+ "roasted-chicken-cheese-chilli-melt": {
+  "file": "assets/dishes/roasted-chicken-cheese-chilli-melt.webp",
+  "name": "Roasted Chicken Cheese Chilli Melt",
+  "category": "burgers",
+  "w": 800,
+  "h": 352,
+  "hero": false
+ },
+ "chicken-mayo-sandwich": {
+  "file": "assets/dishes/chicken-mayo-sandwich.webp",
+  "name": "Chicken Mayo Sandwich",
+  "category": "burgers",
+  "w": 800,
+  "h": 514,
+  "hero": false
+ },
+ "lettuce-tomato-and-cheese-sandwich": {
+  "file": "assets/dishes/lettuce-tomato-and-cheese-sandwich.webp",
+  "name": "Lettuce, Tomato & Cheese Sandwich",
+  "category": "burgers",
+  "w": 800,
+  "h": 633,
+  "hero": false
+ },
+ "coorg-black-coffee": {
+  "file": "assets/dishes/coorg-black-coffee.webp",
+  "name": "Coorg Black Coffee",
+  "category": "drinks",
+  "w": 800,
+  "h": 421,
+  "hero": false
+ },
+ "coorg-milk-coffee": {
+  "file": "assets/dishes/coorg-milk-coffee.webp",
+  "name": "Coorg Milk Coffee",
+  "category": "drinks",
+  "w": 800,
+  "h": 450,
+  "hero": false
+ },
+ "classic-hot-chocolate": {
+  "file": "assets/dishes/classic-hot-chocolate.webp",
+  "name": "Classic Hot Chocolate",
+  "category": "drinks",
+  "w": 800,
+  "h": 554,
+  "hero": false
+ },
+ "shikanji-neembu-jamun-or-anar-masala": {
+  "file": "assets/dishes/shikanji-neembu-jamun-or-anar-masala.webp",
+  "name": "Shikanji: neembu, jamun or anar masala",
+  "category": "drinks",
+  "w": 800,
+  "h": 379,
+  "hero": false
+ },
+ "veg-club-burger-campa": {
+  "file": "assets/dishes/veg-club-burger-campa.webp",
+  "name": "Veg Club Burger + Campa",
+  "category": "drinks",
+  "w": 800,
+  "h": 441,
+  "hero": false
+ },
+ "chicken-club-burger-campa": {
+  "file": "assets/dishes/chicken-club-burger-campa.webp",
+  "name": "Chicken Club Burger + Campa",
+  "category": "drinks",
+  "w": 800,
+  "h": 467,
+  "hero": false
+ },
+ "cheese-chilli-melt-campa": {
+  "file": "assets/dishes/cheese-chilli-melt-campa.webp",
+  "name": "Cheese Chilli Melt + Campa",
+  "category": "drinks",
+  "w": 800,
+  "h": 488,
+  "hero": false
+ },
+ "index-burger": {
+  "file": "assets/dishes/index-burger.webp",
+  "name": "Menu index: double cheeseburger",
+  "category": "burgers",
+  "w": 1400,
+  "h": 1313,
+  "hero": true
+ },
+ "index-sandwich": {
+  "file": "assets/dishes/index-sandwich.webp",
+  "name": "Menu index: grilled sandwich",
+  "category": "burgers",
+  "w": 1400,
+  "h": 1307,
+  "hero": true
+ },
+ "index-cake-slice": {
+  "file": "assets/dishes/index-cake-slice.webp",
+  "name": "Menu index: berry cheesecake slice",
+  "category": "cheesecakes",
+  "w": 1400,
+  "h": 1355,
+  "hero": true
+ }
+}
