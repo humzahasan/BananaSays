@@ -1,0 +1,10 @@
+# Netlify config for the NOMA TIMA site: static files, no build step.
+[build]
+  base = "noma-tima"
+  publish = "."
+  command = ""
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
