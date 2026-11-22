@@ -84,7 +84,7 @@ export function stadiumParam(sRef, rRef) {
 
 // A strip of rings that follow the stadium outline at different offsets/heights.
 // rows: [{ off, y, pleat }]. Pleats crimp the curved ends like a real foil tray.
-export function ringStrip({ s, r, rows, segs, pleats = 0, rand = Math.random, uvScale = 1, seamU = 0 }) {
+export function ringStrip({ s, r, rows, segs, pleats = 0, rand = Math.random, uvScale = 1, seamU = 0, flip = false }) {
   const param = stadiumParam(s, r);
   const cols = segs + 1;
   const pos = new Float32Array(rows.length * cols * 3), uv = new Float32Array(rows.length * cols * 2);
@@ -114,7 +114,7 @@ export function ringStrip({ s, r, rows, segs, pleats = 0, rand = Math.random, uv
   for (let i = 0; i < rows.length - 1; i++)
     for (let j = 0; j < segs; j++) {
       const a = i * cols + j, b = a + 1, c = a + cols, d = c + 1;
-      idx.push(a, c, b, b, c, d);
+      if (flip) idx.push(a, b, c, b, d, c); else idx.push(a, c, b, b, c, d);
     }
   const g = new THREE.BufferGeometry();
   g.setAttribute("position", new THREE.BufferAttribute(pos, 3));
@@ -152,7 +152,7 @@ export function studioEnvironment(renderer) {
     env.add(m);
     return m;
   };
-  panel(22, 22, [0.62, 0.07, 0.07], 0.9, [0, -4, 0]); // red bounce from the hero
+  panel(22, 22, [0.62, 0.07, 0.07], 0.45, [0, -4, 0]); // red bounce from the hero
   panel(4.2, 1.6, [1, 0.96, 0.88], 7, [-1.0, 6.2, -6.5]); // key soft box (reflects on caramel)
   panel(1.0, 7, [1, 0.95, 0.85], 3.2, [-8, 3, 0.5]); // tall strip, left
   panel(5, 2.2, [1, 0.9, 0.78], 1.4, [6, 4, 5]); // warm fill, right front

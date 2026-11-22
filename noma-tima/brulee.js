@@ -50,7 +50,7 @@ const scene = new THREE.Scene();
 scene.environment = studioEnvironment(renderer);
 
 const camera = new THREE.PerspectiveCamera(32, 1, 0.1, 50);
-const REST_POS = new THREE.Vector3(0, 5.4, 4.6), REST_AIM = new THREE.Vector3(0, 0.1, 0);
+const REST_POS = new THREE.Vector3(0, 6.0, 5.2), REST_AIM = new THREE.Vector3(0, 0.1, 0);
 const INTRO_POS = new THREE.Vector3(1.7, 0.95, 2.6), INTRO_AIM = new THREE.Vector3(0.15, 0.3, 0);
 let fit = 1;
 
@@ -116,7 +116,7 @@ for (let i = 0; i <= 22; i++) {
   const d = SR * Math.pow(i / 22, 1.6);
   topRows.push({ off: -d, y: 0 });
 }
-const topGeo = ringStrip({ s: SS, r: SR, rows: topRows, segs: small ? 160 : 224, seamU: 0.5 + 0.11 });
+const topGeo = ringStrip({ s: SS, r: SR, rows: topRows, segs: small ? 160 : 224, seamU: 0.5 + 0.11, flip: true });
 {
   const p = topGeo.attributes.position, uv = topGeo.attributes.uv;
   for (let i = 0; i < p.count; i++) {
@@ -316,14 +316,14 @@ sugar.receiveShadow = true;
 tray.add(sugar);
 
 // ---------- Stone board, contact shadows, props ----------
-const BOARD_R = 2.0, BOARD_Z = -0.25;
+const BOARD_R = 2.15, BOARD_Z = -0.25;
 const stone = stoneTextures(rand, small ? 512 : 1024);
 const board = new THREE.Mesh(
   boardGeometry(BOARD_R, 0.16),
-  new THREE.MeshStandardMaterial({ map: stone.map, bumpMap: stone.bump, bumpScale: 0.6, roughness: 0.88, metalness: 0 })
+  new THREE.MeshStandardMaterial({ map: stone.map, bumpMap: stone.bump, bumpScale: 0.12, roughness: 0.88, metalness: 0 })
 );
 board.position.set(0, 0, BOARD_Z);
-board.receiveShadow = true; board.castShadow = true;
+board.receiveShadow = true;
 scene.add(board);
 
 function shadowPlane(tex, w, h, y, opacity, parent, z = 0) {
@@ -360,7 +360,7 @@ const podMat = new THREE.MeshPhysicalMaterial({
   vertexColors: true, roughness: 0.42, clearcoat: 0.35, clearcoatRoughness: 0.35,
   sheen: 0.6, sheenColor: new THREE.Color(0x5a3018), sheenRoughness: 0.5,
 });
-for (const [x, z, ry, len] of [[0.95, -1.25, 0.42, 1.6], [1.05, -1.1, 0.62, 1.45]]) {
+for (const [x, z, ry, len] of [[0.75, -1.5, 0.12, 1.6], [0.95, -1.38, 0.3, 1.45]]) {
   const pod = new THREE.Mesh(vanillaPodGeometry(rand, len, 0.05), podMat);
   pod.position.set(x, 0, z);
   pod.rotation.y = ry;
@@ -375,7 +375,7 @@ scene.add(bloom);
 
 // ---------- Sugar crystal shower ----------
 const NCRYST = small ? 320 : 850;
-const crystalMat = new THREE.MeshStandardMaterial({ color: 0xfffbf2, roughness: 0.12, metalness: 0, envMapIntensity: 1.6 });
+const crystalMat = new THREE.MeshStandardMaterial({ color: 0xfffbf2, roughness: 0.3, metalness: 0, envMapIntensity: 0.7, emissive: 0x6a6258 });
 const crystals = new THREE.InstancedMesh(new THREE.BoxGeometry(1, 1, 1), crystalMat, NCRYST);
 crystals.instanceMatrix.setUsage(THREE.DynamicDrawUsage);
 crystals.frustumCulled = false;
