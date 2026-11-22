@@ -374,8 +374,8 @@ bloom.scale.setScalar(1.1);
 scene.add(bloom);
 
 // ---------- Sugar crystal shower ----------
-const NCRYST = small ? 320 : 850;
-const crystalMat = new THREE.MeshStandardMaterial({ color: 0xfffbf2, roughness: 0.3, metalness: 0, envMapIntensity: 0.7, emissive: 0x6a6258 });
+const NCRYST = small ? 160 : 380;
+const crystalMat = new THREE.MeshStandardMaterial({ color: 0xffffff, roughness: 0.08, metalness: 0, envMapIntensity: 0.5, emissive: 0x8a857c });
 const crystals = new THREE.InstancedMesh(new THREE.BoxGeometry(1, 1, 1), crystalMat, NCRYST);
 crystals.instanceMatrix.setUsage(THREE.DynamicDrawUsage);
 crystals.frustumCulled = false;
@@ -387,7 +387,7 @@ function showerCrystals(instant) {
   for (const c of cr) {
     let x, z;
     do { x = (rand() - 0.5) * TOP_W; z = (rand() - 0.5) * TOP_H; } while (stadiumSD(x, z, SS, SR) > -0.06);
-    c.size = 0.012 + rand() * 0.012;
+    c.size = 0.006 + rand() * 0.006;
     c.floor = surfaceY(x, z) + c.size * 0.3;
     c.x = x; c.z = z;
     c.vx = (rand() - 0.5) * 0.12; c.vz = (rand() - 0.5) * 0.12;
@@ -544,6 +544,7 @@ const pointerLocal = new THREE.Vector3();
 let userTouched = false, cracked = false, ready = false;
 const parallax = { x: 0, y: 0 };
 const INTRO = reduceMotion ? 0 : 2.3;
+let introDone = false, introDoneAt = 0;
 
 function hitTest(e) {
   const r = renderer.domElement.getBoundingClientRect();
@@ -556,7 +557,7 @@ function onMove(e) {
   pointerType = e.pointerType;
   const hit = hitTest(e);
   const active = pointerType === "mouse" ? true : pointerDown; // mouse torches on hover, touch while pressed
-  if (hit && active && !cracked && t > INTRO) {
+  if (hit && active && !cracked && introDone) {
     pointerUV = hit.uv.clone();
     pointerLocal.copy(tray.worldToLocal(hit.point.clone()));
     userTouched = true;
@@ -756,7 +757,7 @@ resetBtn.addEventListener("click", () => {
 
 // ---------- Loop ----------
 let last = performance.now(), t = 0, shake = 0, visible = true, lastCov = -1, lastPaint = 0;
-let engage = 0, glintT = -1, frameAvg = 1 / 60, adaptTimer = 0;
+let introStart = 0, engage = 0, glintT = -1, frameAvg = 1 / 60, adaptTimer = 0;
 const torchPos = new THREE.Vector3(), torchTarget = new THREE.Vector3(), tmpV = new THREE.Vector3();
 const camPos = new THREE.Vector3(), camAim = new THREE.Vector3();
 new IntersectionObserver(([e]) => { visible = e.isIntersecting; }).observe(stage);
@@ -800,8 +801,8 @@ function frame(now) {
   // Before anyone touches it, the torch demonstrates on its own, then hands over.
   let torchUV = pointerUV;
   if (pointerUV) torchTarget.copy(pointerLocal);
-  if (!userTouched && !reduceMotion && t > INTRO + 0.5 && !cracked && coverage() < 0.32) {
-    const tt = t - INTRO;
+  if (!userTouched && !reduceMotion && introDone && t - introDoneAt > 0.4 && !cracked && coverage() < 0.32) {
+    const tt = t - introDoneAt;
     const u = 0.5 + 0.38 * Math.sin(tt * 0.9 - 0.6), v = 0.5 + 0.3 * Math.sin(tt * 1.9);
     torchUV = { x: u, y: v };
     torchTarget.set((u - 0.5) * TOP_W, 0, (v - 0.5) * TOP_H);
@@ -909,7 +910,7 @@ function frame(now) {
         statusEl.textContent = TEXT.golden;
       } else if (!ready && userTouched) {
         statusEl.textContent = pct < 15 ? TEXT.going : TEXT.pct(pct);
-      } else if (!userTouched && t > INTRO) {
+      } else if (!userTouched && introDone) {
         statusEl.textContent = TEXT.idle;
       }
     }
@@ -952,7 +953,9 @@ function frame(now) {
   }
 
   // Camera: opening move, then gentle parallax, plus a micro-shake on the crack.
-  const ik = INTRO ? ease(Math.min(1, t / INTRO)) : 1;
+  if (!introStart) introStart = now;
+  const ik = INTRO ? ease(Math.min(1, (now - introStart) / 1000 / INTRO)) : 1;
+  if (ik >= 1 && !introDone) { introDone = true; introDoneAt = t; }
   camPos.copy(INTRO_POS).lerp(REST_POS, ik).multiplyScalar(fit);
   camPos.y += Math.sin(ik * Math.PI) * 0.35;
   camAim.copy(INTRO_AIM).lerp(REST_AIM, ik);

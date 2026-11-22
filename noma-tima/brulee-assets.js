@@ -152,7 +152,8 @@ export function studioEnvironment(renderer) {
     env.add(m);
     return m;
   };
-  panel(22, 22, [0.62, 0.07, 0.07], 0.45, [0, -4, 0]); // red bounce from the hero
+  panel(22, 22, [0.62, 0.07, 0.07], 0.12, [0, -4, 0]);
+  panel(22, 22, [1, 0.95, 0.9], 0.35, [0, -1.5, 9]); // light wall in front so outer foil reads bright // red bounce from the hero
   panel(4.2, 1.6, [1, 0.96, 0.88], 7, [-1.0, 6.2, -6.5]); // key soft box (reflects on caramel)
   panel(1.0, 7, [1, 0.95, 0.85], 3.2, [-8, 3, 0.5]); // tall strip, left
   panel(5, 2.2, [1, 0.9, 0.78], 1.4, [6, 4, 5]); // warm fill, right front
